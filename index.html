@@ -51,6 +51,7 @@
                 <a href="#mockups" class="hover:text-emerald-400 transition" data-i18n="nav_mockups">Mockups</a>
                 <a href="#safety" class="hover:text-emerald-400 transition" data-i18n="nav_safety">Pulsera GPS & QR</a>
                 <a href="#ethics" class="hover:text-emerald-400 transition" data-i18n="nav_ethics">Ética Médica</a>
+                <a href="#whitepaper" class="hover:text-emerald-400 transition" data-i18n="nav_whitepaper">Whitepaper</a>
                 <a href="#partners" class="hover:text-emerald-400 transition" data-i18n="nav_partners">Partners</a>
             </nav>
 
@@ -241,6 +242,47 @@
         </div>
     </section>
 
+    <!-- SECTION: Privacy & Security Whitepaper (Nuevo Bloque) -->
+    <section id="whitepaper" class="py-24 bg-slate-950 border-b border-slate-800/60">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20" data-i18n="wp_badge">Technical Compliance & Security</span>
+                <h2 class="text-3xl font-extrabold text-white mt-4 mb-4" data-i18n="wp_heading">Whitepaper de Privacidad y Cifrado E2EE</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto" data-i18n="wp_desc">Arquitectura de Conocimiento Cero (Zero-Knowledge) diseñada para cumplir con los más altos estándares regulatorios médicos (HIPAA / GDPR).</p>
+            </div>
+
+            <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 space-y-6 text-slate-300 text-sm leading-relaxed">
+                <div class="border-b border-slate-800 pb-4">
+                    <h3 class="text-white font-bold text-base mb-2 flex items-center space-x-2">
+                        <span class="text-emerald-400">🔒</span> <span data-i18n="wp_point_1_title">1. Cifrado en Tres Capas (Zero-Knowledge)</span>
+                    </h3>
+                    <p class="text-slate-400" data-i18n="wp_point_1_text">Los flujos de vídeo POV y datos biométricos se cifran localmente en el dispositivo mediante <strong>AES-256</strong> antes de transmitirse. Se transportan vía <strong>TLS 1.3</strong> y se almacenan en clústeres aislados europeos bajo claves controladas por el usuario (CMEK).</p>
+                </div>
+
+                <div class="border-b border-slate-800 pb-4">
+                    <h3 class="text-white font-bold text-base mb-2 flex items-center space-x-2">
+                        <span class="text-emerald-400">⚡</span> <span data-i18n="wp_point_2_title">2. Rescate QR con Tokens Efímeros</span>
+                    </h3>
+                    <p class="text-slate-400" data-i18n="wp_point_2_text">El código QR de la pulsera contiene un UUID aleatorio que no expone datos personales. Al escanearse, genera una sesión efímera que muestra exclusivamente el vídeo de identidad y un canal seguro de contacto.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold text-base mb-2 flex items-center space-x-2">
+                        <span class="text-emerald-400">📑</span> <span data-i18n="wp_point_3_title">3. Cumplimiento Normativo Estricto</span>
+                    </h3>
+                    <p class="text-slate-400 mb-4" data-i18n="wp_point_3_text">Preparado para la firma de acuerdos BAA (HIPAA) y cumplimiento nativo del GDPR europeo (incluyendo el derecho al olvido automatizado y aislamiento total de modelos de IA).</p>
+                    
+                    <div class="pt-2">
+                        <a href="privacy_architecture.md" download class="inline-flex items-center space-x-2 px-5 py-3 rounded-lg bg-emerald-500 text-slate-950 font-bold hover:bg-emerald-400 transition text-xs shadow-lg shadow-emerald-500/20">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                            <span data-i18n="wp_download_btn">Descargar Whitepaper Completo (Markdown)</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- SECTION: Visual Ecosystem Mockups -->
     <section id="mockups" class="py-24 bg-slate-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -309,7 +351,7 @@
     <script>
         const translations = {
             es: {
-                nav_pillars: "Pilares", nav_mockups: "Mockups", nav_safety: "Pulsera GPS & QR", nav_ethics: "Ética Médica", nav_partners: "Partners", btn_brief: "Executive Brief",
+                nav_pillars: "Pilares", nav_mockups: "Mockups", nav_safety: "Pulsera GPS & QR", nav_ethics: "Ética Médica", nav_whitepaper: "Whitepaper", nav_partners: "Partners", btn_brief: "Executive Brief",
                 hero_badge: "HealthTech & Legacy AI Innovation", hero_title_1: "Preserving the Legacy,", hero_title_2: "Protecting the Present.",
                 hero_desc: "\"Volver a pasar por el corazón\": Ecosistema de inteligencia artificial ambiental que combina wearables POV, geolocalización segura de rescate y modelos multimodales para mitigar el deterioro cognitivo.",
                 hero_cta_1: "Ver Mockups Interactivos", hero_cta_2: "Sistema GPS & QR de Rescate",
@@ -335,6 +377,11 @@
                 ethics_card_1_title: "Privacidad GDPR y HIPAA", ethics_card_1_text: "Cifrado de extremo a extremo AES-256. Ningún dato de geolocalización o biométrico se almacena sin el consentimiento explícito de tutores legales.",
                 ethics_card_2_title: "Alineación Geriátrica", ethics_card_2_text: "Diseñado bajo supervisión neurocognitiva para minimizar falsas alarmas y ofrecer máxima discreción y comodidad al portador.",
                 ethics_card_3_title: "Consentimiento Anticipado", ethics_card_3_text: "Protocolos para registrar las preferencias de asistencia y de vídeo en fases tempranas, protegiendo siempre la autonomía y dignidad.",
+                wp_badge: "Cumplimiento Técnico y Seguridad", wp_heading: "Whitepaper de Privacidad y Cifrado E2EE", wp_desc: "Arquitectura de Conocimiento Cero (Zero-Knowledge) diseñada para cumplir con los más altos estándares regulatorios médicos (HIPAA / GDPR).",
+                wp_point_1_title: "1. Cifrado en Tres Capas (Zero-Knowledge)", wp_point_1_text: "Los flujos de vídeo POV y datos biométricos se cifran localmente en el dispositivo mediante AES-256 antes de transmitirse. Se transportan vía TLS 1.3 y se almacenan en clústeres aislados europeos bajo claves controladas por el usuario (CMEK).",
+                wp_point_2_title: "2. Rescate QR con Tokens Efímeros", wp_point_2_text: "El código QR de la pulsera contiene un UUID aleatorio que no expone datos personales. Al escanearse, genera una sesión efímera que muestra exclusivamente el vídeo de identidad y un canal seguro de contacto.",
+                wp_point_3_title: "3. Cumplimiento Normativo Estricto", wp_point_3_text: "Preparado para la firma de acuerdos BAA (HIPAA) y cumplimiento nativo del GDPR europeo (incluyendo el derecho al olvido automatizado y aislamiento total de modelos de IA).",
+                wp_download_btn: "Descargar Whitepaper Completo (Markdown)",
                 mockups_heading: "Ecosistema Visual de Chronosense", mockups_sub: "Interfaces de Usuario y Arquitectura de Producto",
                 mockups_desc: "Visualización de las pantallas desarrolladas para pacientes, supervisión familiar y exploración del legado.",
                 mockup_caption_1: "Figura 1: Vista general de las tres perspectivas operativas del sistema Chronosense.",
@@ -345,7 +392,7 @@
                 footer_copy: "© 2026 Chronosense Project. All rights reserved. Confidential Executive Concept."
             },
             en: {
-                nav_pillars: "Core Pillars", nav_mockups: "Visual Mockups", nav_safety: "GPS & QR Band", nav_ethics: "Medical Ethics", nav_partners: "Partners", btn_brief: "Executive Brief",
+                nav_pillars: "Core Pillars", nav_mockups: "Visual Mockups", nav_safety: "GPS & QR Band", nav_ethics: "Medical Ethics", nav_whitepaper: "Whitepaper", nav_partners: "Partners", btn_brief: "Executive Brief",
                 hero_badge: "HealthTech & Legacy AI Innovation", hero_title_1: "Preserving the Legacy,", hero_title_2: "Protecting the Present.",
                 hero_desc: "An ambient AI ecosystem combining POV smart wearables, secure rescue geolocation, and multimodal models to mitigate cognitive decline.",
                 hero_cta_1: "Explore Visual Mockups", hero_cta_2: "GPS & QR Rescue System",
@@ -371,6 +418,11 @@
                 ethics_card_1_title: "GDPR & HIPAA Privacy", ethics_card_1_text: "End-to-end AES-256 encryption. No geolocation or biometric data is stored without explicit consent from authorized legal guardians.",
                 ethics_card_2_title: "Geriatric Alignment", ethics_card_2_text: "Designed under neurocognitive supervision to minimize false alarms and offer maximum discretion and comfort to the wearer.",
                 ethics_card_3_title: "Advanced Consent", ethics_card_3_text: "Protocols allowing users to record legacy wishes and assistance preferences in early stages, always protecting autonomy and dignity.",
+                wp_badge: "Technical Compliance & Security", wp_heading: "Privacy & E2EE Encryption Whitepaper", wp_desc: "Zero-Knowledge architecture engineered to comply with the highest medical regulatory standards (HIPAA / GDPR).",
+                wp_point_1_title: "1. Three-Layer Zero-Knowledge Encryption", wp_point_1_text: "POV video streams and biometric data are encrypted locally on-device via AES-256 before transmission. Transported via TLS 1.3 and stored in isolated European clusters under user-controlled keys (CMEK).",
+                wp_point_2_title: "2. QR Rescue with Ephemeral Tokens", wp_point_2_text: "The band's QR code contains a random UUID exposing no personal data. When scanned, it generates an ephemeral session displaying solely the identity video and secure contact.",
+                wp_point_3_title: "3. Strict Regulatory Compliance", wp_point_3_text: "Ready for BAA agreements (HIPAA) and native European GDPR compliance (including automated right to be forgotten and total AI model isolation).",
+                wp_download_btn: "Download Full Whitepaper (Markdown)",
                 mockups_heading: "Chronosense Visual Ecosystem", mockups_sub: "User Interfaces & Product Architecture",
                 mockups_desc: "Visual walkthrough of the interfaces developed for patients, family supervision, and legacy exploration.",
                 mockup_caption_1: "Figure 1: Overview of the three operational perspectives of the Chronosense system.",
@@ -381,7 +433,7 @@
                 footer_copy: "© 2026 Chronosense Project. All rights reserved. Confidential Executive Concept."
             },
             de: {
-                nav_pillars: "Kernpfeiler", nav_mockups: "Mockups", nav_safety: "GPS & QR Armband", nav_ethics: "Medizinische Ethik", nav_partners: "Partner", btn_brief: "Executive Brief",
+                nav_pillars: "Kernpfeiler", nav_mockups: "Mockups", nav_safety: "GPS & QR Armband", nav_ethics: "Medizinische Ethik", nav_whitepaper: "Whitepaper", nav_partners: "Partner", btn_brief: "Executive Brief",
                 hero_badge: "HealthTech & Legacy KI-Innovation", hero_title_1: "Das Erbe bewahren,", hero_title_2: "die Gegenwart schützen.",
                 hero_desc: "Ein ambientales KI-Ökosystem, das POV-Wearables, sichere Rettungs-Geolokalisierung und multimodale Modelle kombiniert, um den kognitiven Abbau zu mindern.",
                 hero_cta_1: "Visuelle Mockups Erkunden", hero_cta_2: "GPS & QR Rettungssystem",
@@ -407,6 +459,11 @@
                 ethics_card_1_title: "DSGVO & HIPAA Datenschutz", ethics_card_1_text: "Ende-zu-Ende-AES-256-Verschlüsselung. Keine Geolokalisierungs- oder Biometriedaten werden ohne Zustimmung gespeichert.",
                 ethics_card_2_title: "Geriatrische Ausrichtung", ethics_card_2_text: "Entwickelt unter neurokognitiver Aufsicht zur Minimierung von Fehlalarmen und für maximalen Komfort.",
                 ethics_card_3_title: "Erweiterte Einwilligung", ethics_card_3_text: "Protokolle zur Aufzeichnung von Vermächtniswünschen in frühen Stadien zum Schutz der künftigen Autonomie.",
+                wp_badge: "Technische Konformität & Sicherheit", wp_heading: "Datenschutz- und E2EE-Verschlüsselungs-Whitepaper", wp_desc: "Zero-Knowledge-Architektur zur Einhaltung höchster medizinischer Regulierungsstandards (HIPAA / DSGVO).",
+                wp_point_1_title: "1. Dreistufige Zero-Knowledge-Verschlüsselung", wp_point_1_text: "POV-Videostreams und biometrische Daten werden vor der Übertragung lokal auf dem Gerät via AES-256 verschlüsselt. Transport via TLS 1.3 und Speicherung in isolierten europäischen Clustern unter benutzergesteuerten Schlüsseln (CMEK).",
+                wp_point_2_title: "2. QR-Rettung mit Ephemeren Token", wp_point_2_text: "Der QR-Code des Armbands enthält eine zufällige UUID ohne personenbezogene Daten. Beim Scannen wird eine ephemere Sitzung generiert, die nur Identitätsvideo und Kontakt anzeigt.",
+                wp_point_3_title: "3. Strikte Einhaltung Vorschriften", wp_point_3_text: "Vorbereitet für BAA-Vereinbarungen (HIPAA) und native DSGVO-Konformität (inkl. automatisiertem Recht auf Vergessenwerden und KI-Modell-Isolierung).",
+                wp_download_btn: "Vollständiges Whitepaper Herunterladen (Markdown)",
                 mockups_heading: "Chronosense Visuelles Ökosystem", mockups_sub: "Benutzeroberflächen & Produktarchitektur",
                 mockups_desc: "Visueller Rundgang durch die Schnittstellen für Patienten, Familienüberwachung und Vermächtniserforschung.",
                 mockup_caption_1: "Abbildung 1: Übersicht der drei operativen Perspektiven des Chronosense-Systems.",
