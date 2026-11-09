@@ -1,401 +1,437 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="es" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chronosense — Preserving the Legacy, Protecting the Present</title>
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <!-- Google Fonts: Inter & Lora -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,500;0,600;1,400&display=swap">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            serif: ['Lora', 'serif'],
-          },
-          colors: {
-            brand: {
-              50: '#f0fdf4',
-              500: '#10b981',
-              600: '#059669',
-              900: '#064e3b',
-              dark: '#0a0f1d'
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronosense | AI Ambient Memory Ecosystem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Lora', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981',
+                            600: '#059669',
+                            900: '#064e3b',
+                            dark: '#0f172a',
+                        }
+                    }
+                }
             }
-          }
         }
-      }
-    }
-  </script>
-  <style>
-    .glass-card {
-      background: rgba(255, 255, 255, 0.03);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-    .glow-effect {
-      box-shadow: 0 0 50px -10px rgba(16, 185, 129, 0.15);
-    }
-  </style>
-<style>.lms-source-label {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    background-color: #e0e0e0;
-    color: #333;
-    border-radius: 10px;
-    padding: 4px 4px;
-    font-family: sans-serif;
-    font-size: 10px;
-    pointer-events: none;
-    font-weight: 500;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-</style></head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-slate-950">
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-white">
 
-  <!-- NAVIGATION -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 flex items-center justify-center text-slate-950 font-bold text-xl shadow-lg shadow-emerald-500/20">
-          <i class="fa-solid fa-clock-rotate-left"></i>
-        </div>
-        <span class="text-xl font-extrabold tracking-tight text-white">Chronosense<span class="text-emerald-400">.ai</span></span>
-      </div>
-      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-        <a href="#pillars" class="hover:text-white transition">Core Pillars</a>
-        <a href="#mockups" class="hover:text-white transition">Interactive Mockups</a>
-        <a href="#tech" class="hover:text-white transition">AI & Architecture</a>
-        <a href="#partners" class="hover:text-emerald-400 transition font-semibold text-emerald-400">For Partners / Research</a>
-      </nav>
-      <div>
-        <a href="#partners" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-5 py-2.5 rounded-xl text-sm transition shadow-lg shadow-emerald-500/20">
-          Request Executive Brief
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- HERO SECTION -->
-  <section class="relative pt-36 pb-24 md:pt-48 md:pb-32 overflow-hidden">
-    <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(16,185,129,0.15),rgba(255,255,255,0))]"></div>
-    <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-800/60 text-emerald-400 text-xs font-semibold mb-6 tracking-wide">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> HealthTech & Legacy AI Innovation
-      </div>
-      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight max-w-4xl mx-auto font-serif leading-[1.1] mb-8">
-        Preserving the Legacy, <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300 font-sans">Protecting the Present.</span>
-      </h1>
-      <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto font-normal leading-relaxed mb-12">
-        An ambient AI ecosystem combining POV smart wearables and multimodal language models to mitigate episodic memory decay in Alzheimer’s patients while providing absolute caregiver safety audits and eternal family legacy archives.
-      </p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#mockups" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-base shadow-xl shadow-emerald-500/20 flex items-center justify-center gap-3">
-          <span>Explore Interactive Mockups</span> <i class="fa-solid fa-arrow-down"></i>
-        </a>
-        <a href="#partners" class="w-full sm:w-auto glass-card hover:bg-white/5 text-white font-semibold px-8 py-4 rounded-xl transition text-base border border-slate-700 flex items-center justify-center gap-2">
-          <i class="fa-solid fa-handshake text-emerald-400"></i> Partner With Us (Google / Meta)
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 3 CORE PILLARS SECTION -->
-  <section id="pillars" class="py-24 border-t border-slate-900 bg-slate-950/50">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-3">Core Architecture</h2>
-        <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-serif">Three Pillars of Care & Preservation</p>
-        <p class="text-slate-400 text-sm mt-3">Engineered for zero friction on the patient side and absolute security for family members.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Pillar 1 -->
-        <div class="glass-card rounded-3xl p-8 glow-effect flex flex-col justify-between hover:border-emerald-500/50 transition duration-300">
-          <div>
-            <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-2xl mb-6">
-              <i class="fa-solid fa-glasses"></i>
+    <!-- Header & Language Selector -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 flex items-center justify-center shadow-lg shadow-emerald-500/20">
+                    <svg class="w-6 h-6 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-white">Chronosense<span class="text-emerald-400">.ai</span></span>
             </div>
-            <h3 class="text-xl font-bold text-white mb-3">01. Patient POV HUD</h3>
-            <p class="text-slate-400 text-sm leading-relaxed mb-6">
-              Automated daily voice prompts using the real voice of loved ones ("Good evening Dad, how was your day?"). Frictionless hands-free POV capture via smart glasses or body-cams.
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#pillars" class="hover:text-emerald-400 transition" data-i18n="nav_pillars">Pilares</a>
+                <a href="#mockups" class="hover:text-emerald-400 transition" data-i18n="nav_mockups">Mockups Visuales</a>
+                <a href="#tech" class="hover:text-emerald-400 transition" data-i18n="nav_tech">Arquitectura IA</a>
+                <a href="#partners" class="hover:text-emerald-400 transition" data-i18n="nav_partners">Partners / Colaboración</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <!-- Selector de Idioma -->
+                <div class="flex bg-slate-900 border border-slate-800 rounded-lg p-1 text-xs font-semibold">
+                    <button onclick="setLang('es')" id="btn-es" class="px-2.5 py-1 rounded-md bg-emerald-500 text-slate-950 transition">ES</button>
+                    <button onclick="setLang('en')" id="btn-en" class="px-2.5 py-1 rounded-md text-slate-400 hover:text-white transition">EN</button>
+                    <button onclick="setLang('de')" id="btn-de" class="px-2.5 py-1 rounded-md text-slate-400 hover:text-white transition">DE</button>
+                </div>
+                <a href="#partners" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-lg bg-emerald-500 text-slate-950 hover:bg-emerald-400 transition shadow-lg shadow-emerald-500/10" data-i18n="btn_brief">
+                    Executive Brief
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-28 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-900/20 via-slate-950 to-slate-950 -z-10"></div>
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-6">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span data-i18n="hero_badge">HealthTech & Legacy AI Innovation</span>
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                <span data-i18n="hero_title_1">Preserving the Legacy,</span><br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200" data-i18n="hero_title_2">Protecting the Present.</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto mb-10 font-serif italic" data-i18n="hero_desc">
+                "Volver a pasar por el corazón": Ecosistema de inteligencia artificial ambiental que combina wearables POV y modelos multimodales para mitigar el deterioro cognitivo en Alzheimer y proteger el legado familiar.
             </p>
-          </div>
-          <div class="pt-4 border-t border-slate-800/80 text-xs text-emerald-400 font-semibold flex items-center gap-2">
-            <i class="fa-solid fa-circle-check"></i> Zero cognitive friction design
-          </div>
-        </div>
-
-        <!-- Pillar 2 -->
-        <div class="glass-card rounded-3xl p-8 glow-effect flex flex-col justify-between hover:border-emerald-500/50 transition duration-300">
-          <div>
-            <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-2xl mb-6">
-              <i class="fa-solid fa-shield-halved"></i>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#mockups" class="px-8 py-4 rounded-xl bg-emerald-500 text-slate-950 font-semibold hover:bg-emerald-400 transition shadow-xl shadow-emerald-500/20 flex items-center justify-center space-x-2">
+                    <span data-i18n="hero_cta_1">Ver Mockups Interactivos</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </a>
+                <a href="#partners" class="px-8 py-4 rounded-xl bg-slate-900 border border-slate-800 text-white font-semibold hover:bg-slate-800 transition flex items-center justify-center space-x-2">
+                    <span data-i18n="hero_cta_2">Alianzas Estratégicas (Google / Meta)</span>
+                </a>
             </div>
-            <h3 class="text-xl font-bold text-white mb-3">02. Family Cloud & Abuse Audit</h3>
-            <p class="text-slate-400 text-sm leading-relaxed mb-6">
-              Immediate encrypted upload to private cloud storage with local auto-wipe. Provides family caregivers with continuous safety audits and detection of malicious caregiver conduct.
+        </div>
+    </section>
+
+    <!-- Core Pillars Section -->
+    <section id="pillars" class="py-24 bg-slate-900/40 border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4" data-i18n="pillars_heading">Core Architecture</h2>
+                <p class="text-emerald-400 font-medium mb-2" data-i18n="pillars_sub">Three Pillars of Care & Preservation</p>
+                <p class="text-slate-400" data-i18n="pillars_desc">Diseñado para ofrecer fricción cero al paciente y seguridad absoluta a los familiares cuidadores.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800/80 hover:border-emerald-500/40 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3" data-i18n="pillar_1_title">01. Patient POV HUD</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="pillar_1_text">Estímulos de voz diarios automatizados usando la voz real de seres queridos ("Buenas tardes papá, ¿cómo ha ido el día?"). Captura POV manos libres a través de gafas inteligentes.</p>
+                    <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md" data-i18n="pillar_1_tag">Fricción cognitiva cero</span>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800/80 hover:border-emerald-500/40 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3" data-i18n="pillar_2_title">02. Family Cloud & Audit</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="pillar_2_text">Subida cifrada inmediata a la nube privada con borrado local automático. Proporciona auditorías continuas de seguridad y detección de conductas maliciosas de cuidadores.</p>
+                    <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md" data-i18n="pillar_2_tag">Cifrado seguro AES-256</span>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800/80 hover:border-emerald-500/40 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3" data-i18n="pillar_3_title">03. The Legacy Vault</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="pillar_3_text">Indexación mediante IA multimodal de recuerdos vitales, historias y consejos. Permite a los descendientes revivir anécdotas auténticas y preservar el patrimonio autobiográfico.</p>
+                    <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md" data-i18n="pillar_3_tag">Archivo histórico generativo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: Visual Ecosystem Mockups -->
+    <section id="mockups" class="py-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4" data-i18n="mockups_heading">Ecosistema Visual de Chronosense</h2>
+                <p class="text-emerald-400 font-medium mb-2" data-i18n="mockups_sub">Interfaces de Usuario y Arquitectura de Producto</p>
+                <p class="text-slate-400" data-i18n="mockups_desc">Visualización de las pantallas desarrolladas para pacientes, supervisión familiar y exploración del legado.</p>
+            </div>
+
+            <!-- Contenedor Principal de los Mockups -->
+            <div class="space-y-12">
+                <!-- Mockup 1 -->
+                <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800 shadow-2xl">
+                    <img src="watermarked_img_16665859770286623192.jpg" alt="Chronosense Principal Ecosystem Mockup" class="w-full rounded-xl border border-emerald-500/20 shadow-lg">
+                    <p class="text-slate-400 text-sm mt-4 italic" data-i18n="mockup_caption_1">Figura 1: Vista general de las tres perspectivas operativas del sistema Chronosense.</p>
+                </div>
+
+                <!-- Mockup 2 -->
+                <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800 shadow-2xl">
+                    <img src="watermarked_img_5008540177443977410.jpg" alt="Chronosense Advanced Gallery Mockup" class="w-full rounded-xl border border-emerald-500/20 shadow-lg">
+                    <p class="text-slate-400 text-sm mt-4 italic" data-i18n="mockup_caption_2">Figura 2: Panel avanzado de auditoría, cronología de recuerdos y HUD del paciente activo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Matrix Section -->
+    <section id="tech" class="py-24 bg-slate-900/40 border-t border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4" data-i18n="tech_heading">Technology Stack</h2>
+                <p class="text-emerald-400 font-medium mb-2" data-i18n="tech_sub">Strategic Integration Matrix</p>
+                <p class="text-slate-400" data-i18n="tech_desc">Diseñado para integrarse de forma fluida con ecosistemas empresariales de inteligencia artificial y wearables.</p>
+            </div>
+
+            <div class="overflow-x-auto rounded-xl border border-slate-800 bg-slate-900">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-slate-800 bg-slate-950/60 text-slate-300 text-xs uppercase tracking-wider">
+                            <th class="p-4 font-semibold" data-i18n="table_th_1">System Layer</th>
+                            <th class="p-4 font-semibold" data-i18n="table_th_2">Architecture Specification</th>
+                            <th class="p-4 font-semibold" data-i18n="table_th_3">Ecosystem Fit (Google / Meta)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800 text-sm text-slate-300">
+                        <tr>
+                            <td class="p-4 font-medium text-white" data-i18n="table_td_1_1">Hardware / Capture</td>
+                            <td class="p-4 text-slate-400" data-i18n="table_td_1_2">Smart Glasses (Ray-Ban Meta) / Ultra-light Body-cam. 1080p POV video.</td>
+                            <td class="p-4 text-emerald-400 font-medium" data-i18n="table_td_1_3">Meta Reality Labs / Android Wearables</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium text-white" data-i18n="table_td_2_1">Ambient Activation</td>
+                            <td class="p-4 text-slate-400" data-i18n="table_td_2_2">Scheduled localized voice prompt (Family voice TTS / PCM) via micro-speaker.</td>
+                            <td class="p-4 text-emerald-400 font-medium" data-i18n="table_td_2_3">On-device Assistant / Speech-to-Speech Engine</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium text-white" data-i18n="table_td_3_1">Cloud & Security</td>
+                            <td class="p-4 text-slate-400" data-i18n="table_td_3_2">Zero-local retention. Immediate encrypted upload to cloud vault. Auto-wiped.</td>
+                            <td class="p-4 text-emerald-400 font-medium" data-i18n="table_td_3_3">Google Cloud Healthcare API / Firebase / AES-256</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium text-white" data-i18n="table_td_4_1">Intelligence & Indexing</td>
+                            <td class="p-4 text-slate-400" data-i18n="table_td_4_2">Multimodal tagging (facial recognition of kin, sentiment analysis, safety audit).</td>
+                            <td class="p-4 text-emerald-400 font-medium" data-i18n="table_td_4_3">Google DeepMind Gemini Pro / Vision & Speech APIs</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners / Research Section -->
+    <section id="partners" class="py-24 bg-slate-950">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20" data-i18n="partners_badge">Strategic Partnerships</span>
+            <h2 class="text-3xl font-extrabold text-white mt-4 mb-6" data-i18n="partners_heading">Connect with Chronosense</h2>
+            <p class="text-slate-400 mb-10 text-lg leading-relaxed" data-i18n="partners_desc">
+                ¿Eres investigador en Google DeepMind, líder de producto en Meta Reality Labs o inversor en HealthTech? Estamos abriendo vías de validación y colaboración tecnológica de alto nivel.
             </p>
-          </div>
-          <div class="pt-4 border-t border-slate-800/80 text-xs text-emerald-400 font-semibold flex items-center gap-2">
-            <i class="fa-solid fa-circle-check"></i> AES-256 secure encrypted vault
-          </div>
-        </div>
-
-        <!-- Pillar 3 -->
-        <div class="glass-card rounded-3xl p-8 glow-effect flex flex-col justify-between hover:border-emerald-500/50 transition duration-300">
-          <div>
-            <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-2xl mb-6">
-              <i class="fa-solid fa-vault"></i>
+            
+            <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 text-left max-w-xl mx-auto shadow-xl">
+                <form onsubmit="event.preventDefault(); alert('¡Gracias por tu interés! Nos pondremos en contacto contigo a la mayor brevedad.');" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase mb-1" data-i18n="form_label_name">Nombre completo o Institución</label>
+                        <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500 transition text-sm" placeholder="Dr. Alex Rivera / Google DeepMind">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase mb-1" data-i18n="form_label_email">Correo de contacto profesional</label>
+                        <input type="email" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500 transition text-sm" placeholder="name@google.com o @meta.com">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase mb-1" data-i18n="form_label_msg">Mensaje o Interés de Validación</label>
+                        <textarea rows="3" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500 transition text-sm" placeholder="Interesado en la arquitectura de audio POV y seguridad en la nube..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-3 rounded-lg bg-emerald-500 text-slate-950 font-bold hover:bg-emerald-400 transition shadow-lg shadow-emerald-500/20 text-sm" data-i18n="form_submit">
+                        Solicitar Dossier Ejecutivo
+                    </button>
+                </form>
             </div>
-            <h3 class="text-xl font-bold text-white mb-3">03. The Legacy Vault</h3>
-            <p class="text-slate-400 text-sm leading-relaxed mb-6">
-              Multimodal AI indexing of lifetime memories, personal stories, and advice. Allows family members to access authentic recorded anecdotes and relive moments for generations.
-            </p>
-          </div>
-          <div class="pt-4 border-t border-slate-800/80 text-xs text-emerald-400 font-semibold flex items-center gap-2">
-            <i class="fa-solid fa-circle-check"></i> Generative archival storytelling
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- INTERACTIVE MOCKUP GALLERY SECTION -->
-  <section id="mockups" class="py-24 border-t border-slate-900 bg-slate-950">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-3">Product Experience</h2>
-        <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-serif">Interactive Visual Gallery</p>
-        <p class="text-slate-400 text-sm mt-3">Switch between product interfaces to inspect how Chronosense operates end-to-end.</p>
-      </div>
-
-      <!-- Tab Buttons -->
-      <div class="flex justify-center mb-8">
-        <div class="glass-card p-1.5 rounded-2xl flex gap-2 border border-slate-800">
-          <button onclick="switchTab('tab1')" id="btn-tab1" class="px-6 py-3 rounded-xl text-sm font-semibold transition bg-emerald-500 text-slate-950 shadow-lg">Patient HUD</button>
-          <button onclick="switchTab('tab2')" id="btn-tab2" class="px-6 py-3 rounded-xl text-sm font-semibold transition text-slate-400 hover:text-white">Family Dashboard</button>
-          <button onclick="switchTab('tab3')" id="btn-tab3" class="px-6 py-3 rounded-xl text-sm font-semibold transition text-slate-400 hover:text-white">Legacy Vault</button>
-        </div>
-      </div>
-
-      <!-- Tab 1: Patient HUD Mockup -->
-      <div id="content-tab1" class="glass-card rounded-3xl p-6 md:p-10 border border-slate-800 max-w-5xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div>
-            <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-3 py-1 rounded border border-emerald-800">Perspective 01</span>
-            <h3 class="text-2xl font-bold text-white mt-3 mb-4 font-serif">Smart Glasses HUD (Patient View)</h3>
-            <p class="text-slate-300 text-sm leading-relaxed mb-6">
-              When the scheduled prompt triggers at 19:00 PM, the smart glasses project a warm audio message from the daughter. The patient experiences zero technical friction: a single physical tap or voice command initiates secure cloud recording.
-            </p>
-            <ul class="space-y-3 text-sm text-slate-300">
-              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-400"></i> Ambient audio prompt in family member's voice</li>
-              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-400"></i> 1080p POV hands-free recording</li>
-              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-400"></i> Automatic local wipe to prevent tampering</li>
-            </ul>
-          </div>
-          <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 text-center relative overflow-hidden">
-            <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=800&auto=format&fit=crop');"></div>
-            <div class="relative z-10 bg-slate-950/90 backdrop-blur p-6 rounded-2xl border border-slate-800">
-              <div class="flex items-center justify-between mb-4 text-xs text-emerald-400 font-mono">
-                <span>● RAY-BAN META LINKED</span>
-                <span>19:00 PM</span>
-              </div>
-              <div class="bg-emerald-950/60 border border-emerald-500/30 p-4 rounded-xl mb-4">
-                <p class="text-xs text-emerald-300 uppercase tracking-widest mb-1">Audio Prompt</p>
-                <p class="font-serif text-white italic">"Good evening Dad, how was your day? Press to save our memory."</p>
-              </div>
-              <div class="w-16 h-16 rounded-full bg-emerald-500 text-slate-950 font-bold mx-auto flex items-center justify-center shadow-xl animate-pulse">
-                <i class="fa-solid fa-microphone text-xl"></i>
-              </div>
-              <span class="text-[10px] text-slate-400 mt-2 block">Single Tap to Record</span>
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-900 bg-slate-950 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-2">
+                <div class="w-6 h-6 rounded-lg bg-emerald-500 flex items-center justify-center text-slate-950 font-bold">C</div>
+                <span class="font-bold text-slate-400">Chronosense.ai</span>
             </div>
-          </div>
+            <p data-i18n="footer_copy">© 2026 Chronosense Project. All rights reserved. Confidential Executive Concept.</p>
         </div>
-      </div>
+    </footer>
 
-      <!-- Tab 2: Family Dashboard Mockup -->
-      <div id="content-tab2" class="glass-card rounded-3xl p-6 md:p-10 border border-slate-800 max-w-5xl mx-auto hidden">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div>
-            <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-3 py-1 rounded border border-emerald-800">Perspective 02</span>
-            <h3 class="text-2xl font-bold text-white mt-3 mb-4 font-serif">Family Caregiver Mobile App</h3>
-            <p class="text-slate-300 text-sm leading-relaxed mb-6">
-              Family members manage daily routines, receive instant cloud notifications, and monitor environment safety audits to protect against negligent or malicious caregivers.
-            </p>
-            <ul class="space-y-3 text-sm text-slate-300">
-              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-400"></i> Real-time safety & environment audit logs</li>
-              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-400"></i> Daily routine scheduler & voice prompt builder</li>
-              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-400"></i> Chronological timeline of POV video clips</li>
-            </ul>
-          </div>
-          <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 space-y-4">
-            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 flex items-center justify-between">
-              <div>
-                <p class="font-bold text-white text-sm">Robert (Dad)</p>
-                <p class="text-xs text-emerald-400"><i class="fa-solid fa-shield-halved"></i> Connected & Safe 🔒</p>
-              </div>
-              <span class="text-xs bg-emerald-950 text-emerald-300 px-2 py-1 rounded font-bold border border-emerald-800">SECURE</span>
-            </div>
-            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
-              <p class="text-xs font-semibold text-slate-300 mb-2">Today's Safety Audit</p>
-              <div class="bg-slate-900 p-3 rounded-lg text-xs text-slate-400 flex items-center gap-3">
-                <i class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
-                <span>24-hour environment scan verified. No anomalies or distress detected.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Multilanguage Translation Script -->
+    <script>
+        const translations = {
+            es: {
+                nav_pillars: "Pilares",
+                nav_mockups: "Mockups Visuales",
+                nav_tech: "Arquitectura IA",
+                nav_partners: "Partners",
+                btn_brief: "Executive Brief",
+                hero_badge: "HealthTech & Legacy AI Innovation",
+                hero_title_1: "Preserving the Legacy,",
+                hero_title_2: "Protecting the Present.",
+                hero_desc: "\"Volver a pasar por el corazón\": Ecosistema de inteligencia artificial ambiental que combina wearables POV y modelos multimodales para mitigar el deterioro cognitivo en Alzheimer y proteger el legado familiar.",
+                hero_cta_1: "Ver Mockups Interactivos",
+                hero_cta_2: "Alianzas Estratégicas (Google / Meta)",
+                pillars_heading: "Arquitectura Central",
+                pillars_sub: "Tres Pilares de Cuidado y Preservación",
+                pillars_desc: "Diseñado para ofrecer fricción cero al paciente y seguridad absoluta a los familiares cuidadores.",
+                pillar_1_title: "01. Patient POV HUD",
+                pillar_1_text: "Estímulos de voz diarios automatizados usando la voz real de seres queridos (\"Buenas tardes papá, ¿cómo ha ido el día?\"). Captura POV manos libres a través de gafas inteligentes.",
+                pillar_1_tag: "Fricción cognitiva cero",
+                pillar_2_title: "02. Family Cloud & Audit",
+                pillar_2_text: "Subida cifrada inmediata a la nube privada con borrado local automático. Proporciona auditorías continuas de seguridad y detección de conductas maliciosas de cuidadores.",
+                pillar_2_tag: "Cifrado seguro AES-256",
+                pillar_3_title: "03. The Legacy Vault",
+                pillar_3_text: "Indexación mediante IA multimodal de recuerdos vitales, historias y consejos. Permite a los descendientes revivir anécdotas auténticas y preservar el patrimonio autobiográfico.",
+                pillar_3_tag: "Archivo histórico generativo",
+                mockups_heading: "Ecosistema Visual de Chronosense",
+                mockups_sub: "Interfaces de Usuario y Arquitectura de Producto",
+                mockups_desc: "Visualización de las pantallas desarrolladas para pacientes, supervisión familiar y exploración del legado.",
+                mockup_caption_1: "Figura 1: Vista general de las tres perspectivas operativas del sistema Chronosense.",
+                mockup_caption_2: "Figura 2: Panel avanzado de auditoría, cronología de recuerdos y HUD del paciente activo.",
+                tech_heading: "Stack Tecnológico",
+                tech_sub: "Matriz de Integración Estratégica",
+                tech_desc: "Diseñado para integrarse de forma fluida con ecosistemas empresariales de inteligencia artificial y wearables.",
+                table_th_1: "Capa de Sistema",
+                table_th_2: "Especificación de Arquitectura",
+                table_th_3: "Ajuste de Ecosistema (Google / Meta)",
+                table_td_1_1: "Hardware / Captura",
+                table_td_1_2: "Gafas Inteligentes (Ray-Ban Meta) / Body-cam ultraligera. Vídeo 1080p POV.",
+                table_td_1_3: "Meta Reality Labs / Android Wearables",
+                table_td_2_1: "Activación Ambiental",
+                table_td_2_2: "Prompt de voz localizado programado (Voz familiar TTS / PCM) vía altavoz.",
+                table_td_2_3: "Asistente en dispositivo / Speech-to-Speech",
+                table_td_3_1: "Nube y Seguridad",
+                table_td_3_2: "Sin retención local. Subida cifrada inmediata a bóveda cloud. Borrado automático.",
+                table_td_3_3: "Google Cloud Healthcare API / Firebase / AES-256",
+                table_td_4_1: "Inteligencia e Indexación",
+                table_td_4_2: "Etiquetado multimodal (reconocimiento facial, análisis de sentimiento, auditoría).",
+                table_td_4_3: "Google DeepMind Gemini Pro / Vision & Speech APIs",
+                partners_badge: "Alianzas Estratégicas",
+                partners_heading: "Conecta con Chronosense",
+                partners_desc: "¿Eres investigador en Google DeepMind, líder de producto en Meta Reality Labs o inversor en HealthTech? Estamos abriendo vías de validación y colaboración tecnológica de alto nivel.",
+                form_label_name: "Nombre completo o Institución",
+                form_label_email: "Correo de contacto profesional",
+                form_label_msg: "Mensaje o Interés de Validación",
+                form_submit: "Solicitar Dossier Ejecutivo",
+                footer_copy: "© 2026 Chronosense Project. All rights reserved. Confidential Executive Concept."
+            },
+            en: {
+                nav_pillars: "Core Pillars",
+                nav_mockups: "Visual Mockups",
+                nav_tech: "AI Architecture",
+                nav_partners: "Partners",
+                btn_brief: "Executive Brief",
+                hero_badge: "HealthTech & Legacy AI Innovation",
+                hero_title_1: "Preserving the Legacy,",
+                hero_title_2: "Protecting the Present.",
+                hero_desc: "An ambient AI ecosystem combining POV smart wearables and multimodal language models to mitigate episodic memory decay in Alzheimer’s patients while providing absolute caregiver safety audits and eternal family legacy archives.",
+                hero_cta_1: "Explore Visual Mockups",
+                hero_cta_2: "Strategic Partnerships (Google / Meta)",
+                pillars_heading: "Core Architecture",
+                pillars_sub: "Three Pillars of Care & Preservation",
+                pillars_desc: "Engineered for zero friction on the patient side and absolute security for family members.",
+                pillar_1_title: "01. Patient POV HUD",
+                pillar_1_text: "Automated daily voice prompts using the real voice of loved ones (\"Good evening Dad, how was your day?\"). Frictionless hands-free POV capture via smart glasses.",
+                pillar_1_tag: "Zero cognitive friction design",
+                pillar_2_title: "02. Family Cloud & Audit",
+                pillar_2_text: "Immediate encrypted upload to private cloud storage with local auto-wipe. Provides family caregivers with continuous safety audits and detection of malicious caregiver conduct.",
+                pillar_2_tag: "AES-256 secure encrypted vault",
+                pillar_3_title: "03. The Legacy Vault",
+                pillar_3_text: "Multimodal AI indexing of lifetime memories, personal stories, and advice. Allows family members to access authentic recorded anecdotes and relive moments for generations.",
+                pillar_3_tag: "Generative archival storytelling",
+                mockups_heading: "Chronosense Visual Ecosystem",
+                mockups_sub: "User Interfaces & Product Architecture",
+                mockups_desc: "Visual walkthrough of the interfaces developed for patients, family supervision, and legacy exploration.",
+                mockup_caption_1: "Figure 1: Overview of the three operational perspectives of the Chronosense system.",
+                mockup_caption_2: "Figure 2: Advanced audit panel, memory timeline, and active patient HUD.",
+                tech_heading: "Technology Stack",
+                tech_sub: "Strategic Integration Matrix",
+                tech_desc: "Designed for seamless integration with enterprise AI and wearable operating systems.",
+                table_th_1: "System Layer",
+                table_th_2: "Architecture Specification",
+                table_th_3: "Ecosystem Fit (Google / Meta)",
+                table_td_1_1: "Hardware / Capture",
+                table_td_1_2: "Smart Glasses (Ray-Ban Meta) / Ultra-light Body-cam. 1080p POV video.",
+                table_td_1_3: "Meta Reality Labs / Android Wearables",
+                table_td_2_1: "Ambient Activation",
+                table_td_2_2: "Scheduled localized voice prompt (Family voice TTS / PCM) via micro-speaker.",
+                table_td_2_3: "On-device Assistant / Speech-to-Speech Engine",
+                table_td_3_1: "Cloud & Security",
+                table_td_3_2: "Zero-local retention. Immediate encrypted upload to cloud vault. Auto-wiped.",
+                table_td_3_3: "Google Cloud Healthcare API / Firebase / AES-256",
+                table_td_4_1: "Intelligence & Indexing",
+                table_td_4_2: "Multimodal tagging (facial recognition of kin, sentiment analysis, safety audit).",
+                table_td_4_3: "Google DeepMind Gemini Pro / Vision & Speech APIs",
+                partners_badge: "Strategic Partnerships",
+                partners_heading: "Connect with Chronosense",
+                partners_desc: "Are you an AI researcher at Google DeepMind, a product lead at Meta Reality Labs, or a HealthTech investor? We are opening discussions for early validation and strategic partnerships.",
+                form_label_name: "Full Name or Institution",
+                form_label_email: "Professional Contact Email",
+                form_label_msg: "Message or Validation Interest",
+                form_submit: "Request Executive Brief",
+                footer_copy: "© 2026 Chronosense Project. All rights reserved. Confidential Executive Concept."
+            },
+            de: {
+                nav_pillars: "Kernpfeiler",
+                nav_mockups: "Visuelle Mockups",
+                nav_tech: "KI-Architektur",
+                nav_partners: "Partner",
+                btn_brief: "Executive Brief",
+                hero_badge: "HealthTech & Legacy KI-Innovation",
+                hero_title_1: "Das Erbe bewahren,",
+                hero_title_2: "die Gegenwart schützen.",
+                hero_desc: "Ein ambientales KI-Ökosystem, das POV-Wearables und multimodale Sprachmodelle kombiniert, um den Gedächtnisverlust bei Alzheimer-Patienten zu mindern und ewige Familienarchive zu sichern.",
+                hero_cta_1: "Visuelle Mockups Erkunden",
+                hero_cta_2: "Strategische Partnerschaften (Google / Meta)",
+                pillars_heading: "Kernarchitektur",
+                pillars_sub: "Drei Säulen der Pflege & Bewahrung",
+                pillars_desc: "Entwickelt für null Reibung auf Patientenseite und absolute Sicherheit für pflegende Angehörige.",
+                pillar_1_title: "01. Patient POV HUD",
+                pillar_1_text: "Automatisierte tägliche Sprachaufforderungen in der echten Stimme von Angehörigen. Reibungslose freihändige POV-Aufnahme über intelligente Brillen.",
+                pillar_1_tag: "Null kognitive Reibung",
+                pillar_2_title: "02. Family Cloud & Audit",
+                pillar_2_text: "Sofortiger verschlüsselter Upload in die private Cloud mit automatischer lokaler Löschung. Bietet kontinuierliche Sicherheitsaudits.",
+                pillar_2_tag: "AES-256 sicherer Tresor",
+                pillar_3_title: "03. The Legacy Vault",
+                pillar_3_text: "Multimodale KI-Indizierung von Lebenserinnerungen und Geschichten. Ermöglicht Nachkommen den Zugriff auf authentische Anekdoten.",
+                pillar_3_tag: "Generatives Archiv-Storytelling",
+                mockups_heading: "Chronosense Visuelles Ökosystem",
+                mockups_sub: "Benutzeroberflächen & Produktarchitektur",
+                mockups_desc: "Visueller Rundgang durch die Schnittstellen für Patienten, Familienüberwachung und Vermächtniserforschung.",
+                mockup_caption_1: "Abbildung 1: Übersicht der drei operativen Perspektiven des Chronosense-Systems.",
+                mockup_caption_2: "Abbildung 2: Fortgeschrittenes Audit-Panel, Gedächtnis-Timeline und aktives Patienten-HUD.",
+                tech_heading: "Technologie-Stack",
+                tech_sub: "Strategische Integrationsmatrix",
+                tech_desc: "Entwickelt für die nahtlose Integration in KI-Unternehmensökosysteme und Wearable-Betriebssysteme.",
+                table_th_1: "Systemebene",
+                table_th_2: "Architekturspezifikation",
+                table_th_3: "Ökosystem-Passung (Google / Meta)",
+                table_td_1_1: "Hardware / Erfassung",
+                table_td_1_2: "Smart Glasses (Ray-Ban Meta) / Leichte Body-Cam. 1080p POV-Video.",
+                table_td_1_3: "Meta Reality Labs / Android Wearables",
+                table_td_2_1: "Ambient Aktivierung",
+                table_td_2_2: "Geplante lokalisierte Sprachaufforderung (Familienstimme TTS) über Mikro-Lautsprecher.",
+                table_td_2_3: "On-Device Assistant / Speech-to-Speech Engine",
+                table_td_3_1: "Cloud & Sicherheit",
+                table_td_3_2: "Keine lokale Speicherung. Sofortiger verschlüsselter Upload. Automatisch gelöscht.",
+                table_td_3_3: "Google Cloud Healthcare API / Firebase / AES-256",
+                table_td_4_1: "Intelligenz & Indexierung",
+                table_td_4_2: "Multimodales Tagging (Gesichtserkennung von Verwandten, Sentiment-Analyse, Audit).",
+                table_td_4_3: "Google DeepMind Gemini Pro / Vision & Speech APIs",
+                partners_badge: "Strategische Partnerschaften",
+                partners_heading: "Mit Chronosense verbinden",
+                partners_desc: "Sind Sie KI-Forscher bei Google DeepMind, Produktleiter bei Meta Labs oder HealthTech-Investor? Wir öffnen Wege für eine frühe Validierung.",
+                form_label_name: "Vollständiger Name oder Institution",
+                form_label_email: "Berufliche E-Mail-Adresse",
+                form_label_msg: "Nachricht oder Validierungsinteresse",
+                form_submit: "Executive Brief Anfordern",
+                footer_copy: "© 2026 Chronosense Project. Alle Rechte vorbehalten. Vertrauliches Konzept."
+            }
+        };
 
-      <!-- Tab 3: Legacy Vault Mockup -->
-      <div id="content-tab3" class="glass-card rounded-3xl p-6 md:p-10 border border-slate-800 max-w-5xl mx-auto hidden">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div>
-            <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-3 py-1 rounded border border-emerald-800">Perspective 03</span>
-            <h3 class="text-2xl font-bold text-white mt-3 mb-4 font-serif">Reminiscence Vault & Legacy Player</h3>
-            <p class="text-slate-300 text-sm leading-relaxed mb-6">
-              A generative archival vault where descendants can explore autobiographical stories, listen to authentic recorded voice clips, and interact with an ethical knowledge base of lifetime memories.
-            </p>
-            <ul class="space-y-3 text-sm text-slate-300">
-              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-400"></i> Indexed by multimodal AI (Gemini APIs)</li>
-              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-400"></i> Therapy and reminiscence mode for families</li>
-              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-400"></i> Eternal autobiographical preservation</li>
-            </ul>
-          </div>
-          <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 text-center relative overflow-hidden">
-            <div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=800&auto=format&fit=crop');"></div>
-            <div class="relative z-10 bg-slate-950/90 backdrop-blur p-6 rounded-2xl border border-slate-800 text-left">
-              <span class="text-[10px] font-bold text-amber-400 bg-amber-950 px-2.5 py-1 rounded border border-amber-800">AUTOBIOGRAPHICAL LEGACY</span>
-              <p class="font-serif text-slate-200 italic text-sm my-4">"Son, I want to tell you the story of how your grandfather and I built our first workshop..."</p>
-              <div class="bg-slate-900 p-3 rounded-xl border border-slate-800 text-xs text-slate-400">
-                <span class="text-emerald-400 font-bold block mb-1">Gemini Multimodal Query:</span>
-                <span>Indexed by facial recognition, location, and emotional tone.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- TECH & AI INTEGRATION MATRIX -->
-  <section id="tech" class="py-24 border-t border-slate-900 bg-slate-950/50">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-3">Technology Stack</h2>
-        <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-serif">Strategic Integration Matrix</p>
-        <p class="text-slate-400 text-sm mt-3">Designed for seamless integration with enterprise AI and wearable operating systems.</p>
-      </div>
-
-      <div class="glass-card rounded-3xl overflow-hidden border border-slate-800 max-w-5xl mx-auto">
-        <div class="overflow-x-auto">
-          <table class="w-full text-left text-sm text-slate-300">
-            <thead class="bg-slate-900/80 text-white font-bold border-b border-slate-800">
-              <tr>
-                <th class="p-4 sm:p-6">System Layer</th>
-                <th class="p-4 sm:p-6">Architecture Specification</th>
-                <th class="p-4 sm:p-6">Ecosystem Fit (Google / Meta)</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-800/60">
-              <tr>
-                <td class="p-4 sm:p-6 font-semibold text-white">Hardware / Capture</td>
-                <td class="p-4 sm:p-6 text-slate-400">Smart Glasses (Ray-Ban Meta) / Ultra-light Body-cam. 1080p POV video + multi-mic array.</td>
-                <td class="p-4 sm:p-6 text-emerald-400">Meta Reality Labs / Android Wearables</td>
-              </tr>
-              <tr>
-                <td class="p-4 sm:p-6 font-semibold text-white">Ambient Activation</td>
-                <td class="p-4 sm:p-6 text-slate-400">Scheduled localized voice prompt (Family voice TTS / PCM) via micro-speaker.</td>
-                <td class="p-4 sm:p-6 text-emerald-400">On-device Assistant / Speech-to-Speech Engine</td>
-              </tr>
-              <tr>
-                <td class="p-4 sm:p-6 font-semibold text-white">Cloud & Security</td>
-                <td class="p-4 sm:p-6 text-slate-400">Zero-local retention. Immediate encrypted upload to cloud vault. Auto-wiped locally.</td>
-                <td class="p-4 sm:p-6 text-emerald-400">Google Cloud Healthcare API / Firebase / AES-256</td>
-              </tr>
-              <tr>
-                <td class="p-4 sm:p-6 font-semibold text-white">Intelligence & Indexing</td>
-                <td class="p-4 sm:p-6 text-slate-400">Multimodal tagging (facial recognition of kin, sentiment analysis, environmental safety audit).</td>
-                <td class="p-4 sm:p-6 text-emerald-400">Google DeepMind Gemini 1.5 Pro / Vision & Speech APIs</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PARTNERS / RESEARCH CONTACT SECTION -->
-  <section id="partners" class="py-24 border-t border-slate-900 bg-slate-950">
-    <div class="max-w-4xl mx-auto px-6">
-      <div class="glass-card rounded-3xl p-8 sm:p-12 border border-emerald-500/20 glow-effect text-center">
-        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-950/80 px-3 py-1 rounded border border-emerald-800">Strategic Partnerships</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-serif mt-4 mb-4">Connect with Chronosense</h2>
-        <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto mb-8 leading-relaxed">
-          Are you an AI researcher at Google DeepMind, a product lead at Meta Reality Labs, or a HealthTech investor? We are opening discussions for early validation and strategic partnerships.
-        </p>
-
-        <form onsubmit="event.preventDefault(); alert('Thank you! Your executive brief request has been simulated successfully.');" class="max-w-md mx-auto space-y-4 text-left">
-          <div>
-            <label class="block text-xs font-semibold text-slate-400 mb-1">Your Name / Organization</label>
-            <input type="text" required placeholder="e.g., Dr. Jane Doe (Google DeepMind)" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-emerald-500 transition">
-          </div>
-          <div>
-            <label class="block text-xs font-semibold text-slate-400 mb-1">Professional Email</label>
-            <input type="email" required placeholder="name@google.com or name@meta.com" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-emerald-500 transition">
-          </div>
-          <div>
-            <label class="block text-xs font-semibold text-slate-400 mb-1">Message / Area of Interest</label>
-            <textarea rows="3" placeholder="I would like to review the full technical brief and prototype..." class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-emerald-500 transition"></textarea>
-          </div>
-          <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3.5 rounded-xl transition text-sm shadow-lg shadow-emerald-500/20">
-            Request Executive Dossier &amp; Pitch Deck
-          </button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="border-t border-slate-900 bg-slate-950 py-10 px-6 text-center text-xs text-slate-500">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div class="flex items-center gap-2">
-        <div class="w-6 h-6 rounded-lg bg-emerald-500 flex items-center justify-center text-slate-950 font-bold text-xs">
-          <i class="fa-solid fa-clock-rotate-left"></i>
-        </div>
-        <span class="font-bold text-white">Chronosense.ai</span>
-      </div>
-      <p>© 2026 Chronosense Project. All rights reserved. Confidential Executive Concept.</p>
-    </div>
-  </footer>
-
-  <!-- JavaScript for Interactive Tabs -->
-  <script>
-    function switchTab(tabId) {
-      // Hide all content tabs
-      document.getElementById('content-tab1').classList.add('hidden');
-      document.getElementById('content-tab2').classList.add('hidden');
-      document.getElementById('content-tab3').classList.add('hidden');
-
-      // Reset button styles
-      ['btn-tab1', 'btn-tab2', 'btn-tab3'].forEach(id => {
-        const btn = document.getElementById(id);
-        btn.className = "px-6 py-3 rounded-xl text-sm font-semibold transition text-slate-400 hover:text-white";
-      });
-
-      // Show selected tab and highlight button
-      document.getElementById('content-' + tabId).classList.remove('hidden');
-      const activeBtn = document.getElementById('btn-' + tabId);
-      activeBtn.className = "px-6 py-3 rounded-xl text-sm font-semibold transition bg-emerald-500 text-slate-950 shadow-lg";
-    }
-  </script>
+        function setLang(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+            ['es', 'en', 'de'].forEach(l => {
+                const btn = document.getElementById(`btn-${l}`);
+                if (l === lang) {
+                    btn.className = "px-2.5 py-1 rounded-md bg-emerald-500 text-slate-950 transition";
+                } else {
+                    btn.className = "px-2.5 py-1 rounded-md text-slate-400 hover:text-white transition";
+                }
+            });
+            document.documentElement.lang = lang;
+        }
+    </script>
 </body>
 </html>
