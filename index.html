@@ -28,18 +28,38 @@
     <!-- Header & Language Selector -->
     <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
-            <!-- Logo SVG Integrado en Cabecera -->
+            <!-- Logo SVG Completo en Cabecera -->
             <div class="flex items-center space-x-3">
-                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-slate-900 border border-emerald-500/30 flex items-center justify-center p-1.5 sm:p-2 shadow-lg shadow-emerald-500/10 transition-all">
-                    <svg viewBox="0 0 100 100" class="w-full h-full text-emerald-400" fill="none" stroke="currentColor">
-                        <path d="M 50 15 A 35 35 0 1 0 85 50 A 35 35 0 0 0 50 15 Z" stroke-width="4" class="stroke-emerald-500/30"/>
-                        <path d="M 35 65 C 35 50 45 40 55 35 C 65 30 70 20 65 15" stroke-width="5" stroke-linecap="round" class="stroke-emerald-400"/>
-                        <circle cx="35" cy="65" r="4" class="fill-teal-300 stroke-none"/>
-                        <circle cx="55" cy="35" r="4" class="fill-emerald-400 stroke-none"/>
-                        <circle cx="65" cy="15" r="4" class="fill-emerald-300 stroke-none"/>
-                        <path d="M 55 35 L 75 45 M 35 65 L 45 80" stroke-width="3" class="stroke-teal-400/60" stroke-dasharray="2 2"/>
-                        <circle cx="75" cy="45" r="3" class="fill-teal-400 stroke-none"/>
-                        <circle cx="45" cy="80" r="3" class="fill-emerald-500 stroke-none"/>
+                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-slate-900/90 border border-emerald-500/30 flex items-center justify-center p-1.5 sm:p-2 shadow-lg shadow-emerald-500/10 transition-all">
+                    <svg viewBox="0 0 200 200" class="w-full h-full text-emerald-400 drop-shadow-[0_0_8px_rgba(16,185,129,0.5)]" fill="none" stroke="currentColor">
+                        <!-- Perfil Neuronal Completo -->
+                        <path d="M 95,20 C 135,20 170,45 170,85 C 170,105 160,120 160,135 C 160,145 165,150 160,165 C 155,175 135,175 125,170 C 120,180 105,185 95,185 C 80,185 70,175 60,165 C 50,155 35,135 30,115 C 25,95 35,60 55,38 C 68,24 80,20 95,20 Z" stroke-width="3" class="stroke-emerald-400" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Reloj de Arena / Red Central -->
+                        <path d="M 75,50 C 95,70 105,80 115,100 C 125,120 95,135 75,150 M 115,50 C 95,70 85,85 75,100 C 65,120 95,135 115,150" stroke-width="3.5" class="stroke-teal-300" stroke-linecap="round"/>
+                        <!-- Red Completa de Mallas y Conexiones Internas -->
+                        <path d="M 45,70 L 65,50 L 95,30 L 125,40 L 150,65 L 155,95 L 140,125 L 115,155 L 85,165 L 55,145 L 40,115 Z" stroke-width="1.5" class="stroke-emerald-500/40" stroke-dasharray="3 3"/>
+                        <path d="M 65,50 L 75,80 L 55,100 L 75,120 L 95,140 M 125,40 L 115,80 L 135,100 L 115,130 L 135,155 M 95,30 L 95,70 L 105,110 L 95,165" stroke-width="2" class="stroke-teal-400/70"/>
+                        <path d="M 45,70 L 75,80 M 150,65 L 115,80 M 40,115 L 75,120 M 140,125 L 115,130 M 55,38 L 95,70 M 155,95 L 105,110" stroke-width="1.5" class="stroke-emerald-300/60"/>
+                        <!-- Nodos Principales y Secundarios (Puntos Brillantes) -->
+                        <circle cx="95" cy="30" r="5" class="fill-emerald-300 stroke-none"/>
+                        <circle cx="125" cy="40" r="4.5" class="fill-teal-300 stroke-none"/>
+                        <circle cx="65" cy="50" r="4.5" class="fill-emerald-400 stroke-none"/>
+                        <circle cx="150" cy="65" r="5" class="fill-emerald-300 stroke-none"/>
+                        <circle cx="45" cy="70" r="4" class="fill-teal-400 stroke-none"/>
+                        <circle cx="75" cy="80" r="5.5" class="fill-emerald-400 stroke-none"/>
+                        <circle cx="115" cy="80" r="5.5" class="fill-emerald-300 stroke-none"/>
+                        <circle cx="155" cy="95" r="4" class="fill-teal-300 stroke-none"/>
+                        <circle cx="55" cy="100" r="4.5" class="fill-emerald-400 stroke-none"/>
+                        <circle cx="105" cy="110" r="6" class="fill-emerald-300 stroke-none"/>
+                        <circle cx="135" cy="100" r="4.5" class="fill-teal-400 stroke-none"/>
+                        <circle cx="40" cy="115" r="4" class="fill-emerald-400 stroke-none"/>
+                        <circle cx="75" cy="120" r="5" class="fill-teal-300 stroke-none"/>
+                        <circle cx="115" cy="130" r="5" class="fill-emerald-400 stroke-none"/>
+                        <circle cx="140" cy="125" r="4.5" class="fill-teal-400 stroke-none"/>
+                        <circle cx="55" cy="145" r="4" class="fill-emerald-300 stroke-none"/>
+                        <circle cx="95" cy="140" r="5" class="fill-emerald-400 stroke-none"/>
+                        <circle cx="115" cy="155" r="4.5" class="fill-teal-300 stroke-none"/>
+                        <circle cx="85" cy="165" r="4" class="fill-emerald-400 stroke-none"/>
                     </svg>
                 </div>
                 <span class="text-xl sm:text-2xl font-bold tracking-tight text-white">Chronosense<span class="text-emerald-400">.ai</span></span>
@@ -66,22 +86,37 @@
         </div>
     </header>
 
-    <!-- Hero Section con Fondo de Pantalla del Logotipo -->
+    <!-- Hero Section con Fondo del Logotipo Completo -->
     <section class="relative pt-24 pb-32 overflow-hidden flex items-center justify-center">
-        <!-- Fondo Ambiental con Gradiente Radial -->
         <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-950/40 via-slate-950 to-slate-950 -z-20"></div>
 
-        <!-- Marca de Agua: Logotipo SVG Gigante de Fondo -->
-        <div class="absolute inset-0 flex items-center justify-center pointer-events-none -z-10 opacity-15 hover:opacity-25 transition-opacity duration-700">
-            <svg viewBox="0 0 100 100" class="w-[600px] h-[600px] sm:w-[800px] sm:h-[800px] text-emerald-400 filter drop-shadow-[0_0_50px_rgba(16,185,129,0.3)] animate-pulse" fill="none" stroke="currentColor">
-                <path d="M 50 15 A 35 35 0 1 0 85 50 A 35 35 0 0 0 50 15 Z" stroke-width="2" class="stroke-emerald-500/40"/>
-                <path d="M 35 65 C 35 50 45 40 55 35 C 65 30 70 20 65 15" stroke-width="3" stroke-linecap="round" class="stroke-emerald-400"/>
-                <circle cx="35" cy="65" r="3" class="fill-teal-300 stroke-none"/>
-                <circle cx="55" cy="35" r="3" class="fill-emerald-400 stroke-none"/>
-                <circle cx="65" cy="15" r="3" class="fill-emerald-300 stroke-none"/>
-                <path d="M 55 35 L 75 45 M 35 65 L 45 80" stroke-width="2" class="stroke-teal-400/60" stroke-dasharray="2 2"/>
-                <circle cx="75" cy="45" r="2.5" class="fill-teal-400 stroke-none"/>
-                <circle cx="45" cy="80" r="2.5" class="fill-emerald-500 stroke-none"/>
+        <!-- Marca de Agua: Logotipo Completo SVG Gigante de Fondo -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none -z-10 opacity-20 hover:opacity-30 transition-opacity duration-700">
+            <svg viewBox="0 0 200 200" class="w-[600px] h-[600px] sm:w-[850px] sm:h-[850px] text-emerald-400 filter drop-shadow-[0_0_60px_rgba(16,185,129,0.35)] animate-pulse" fill="none" stroke="currentColor">
+                <path d="M 95,20 C 135,20 170,45 170,85 C 170,105 160,120 160,135 C 160,145 165,150 160,165 C 155,175 135,175 125,170 C 120,180 105,185 95,185 C 80,185 70,175 60,165 C 50,155 35,135 30,115 C 25,95 35,60 55,38 C 68,24 80,20 95,20 Z" stroke-width="2.5" class="stroke-emerald-400" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M 75,50 C 95,70 105,80 115,100 C 125,120 95,135 75,150 M 115,50 C 95,70 85,85 75,100 C 65,120 95,135 115,150" stroke-width="3" class="stroke-teal-300" stroke-linecap="round"/>
+                <path d="M 45,70 L 65,50 L 95,30 L 125,40 L 150,65 L 155,95 L 140,125 L 115,155 L 85,165 L 55,145 L 40,115 Z" stroke-width="1.2" class="stroke-emerald-500/40" stroke-dasharray="3 3"/>
+                <path d="M 65,50 L 75,80 L 55,100 L 75,120 L 95,140 M 125,40 L 115,80 L 135,100 L 115,130 L 135,155 M 95,30 L 95,70 L 105,110 L 95,165" stroke-width="1.8" class="stroke-teal-400/70"/>
+                <path d="M 45,70 L 75,80 M 150,65 L 115,80 M 40,115 L 75,120 M 140,125 L 115,130 M 55,38 L 95,70 M 155,95 L 105,110" stroke-width="1.2" class="stroke-emerald-300/60"/>
+                <circle cx="95" cy="30" r="4.5" class="fill-emerald-300 stroke-none"/>
+                <circle cx="125" cy="40" r="4" class="fill-teal-300 stroke-none"/>
+                <circle cx="65" cy="50" r="4" class="fill-emerald-400 stroke-none"/>
+                <circle cx="150" cy="65" r="4.5" class="fill-emerald-300 stroke-none"/>
+                <circle cx="45" cy="70" r="3.5" class="fill-teal-400 stroke-none"/>
+                <circle cx="75" cy="80" r="5" class="fill-emerald-400 stroke-none"/>
+                <circle cx="115" cy="80" r="5" class="fill-emerald-300 stroke-none"/>
+                <circle cx="155" cy="95" r="3.5" class="fill-teal-300 stroke-none"/>
+                <circle cx="55" cy="100" r="4" class="fill-emerald-400 stroke-none"/>
+                <circle cx="105" cy="110" r="5.5" class="fill-emerald-300 stroke-none"/>
+                <circle cx="135" cy="100" r="4" class="fill-teal-400 stroke-none"/>
+                <circle cx="40" cy="115" r="3.5" class="fill-emerald-400 stroke-none"/>
+                <circle cx="75" cy="120" r="4.5" class="fill-teal-300 stroke-none"/>
+                <circle cx="115" cy="130" r="4.5" class="fill-emerald-400 stroke-none"/>
+                <circle cx="140" cy="125" r="4" class="fill-teal-400 stroke-none"/>
+                <circle cx="55" cy="145" r="3.5" class="fill-emerald-300 stroke-none"/>
+                <circle cx="95" cy="140" r="4.5" class="fill-emerald-400 stroke-none"/>
+                <circle cx="115" cy="155" r="4" class="fill-teal-300 stroke-none"/>
+                <circle cx="85" cy="165" r="3.5" class="fill-emerald-400 stroke-none"/>
             </svg>
         </div>
 
@@ -433,7 +468,7 @@
                 func_4_title: "Modo Emergencia SOS", func_4_desc: "Capacidad de avisar simultáneamente a varios familiares y contactos de confianza con un solo toque o comando.",
                 func_5_title: "Historial de Recorridos", func_5_desc: "Consultar desplazamientos anteriores y patrones de ruta habituales para una mejor supervisión médica.",
                 func_6_title: "Detección de Retirada", func_6_desc: "Alerta instantánea al cuidador si la persona se quita la pulsera de la muñeca de forma voluntaria o accidental.",
-                mockups_heading: "Ecosistema Visual de Chronosense", mockups_sub: "Interfaces de Usuario y Arquitectura de Producto", mockups_desc: "Visualización de las pantallas desarrolladas para la supervisión del cuidador y la exploration del legado.",
+                mockups_heading: "Ecosistema Visual de Chronosense", mockups_sub: "Interfaces de Usuario y Arquitectura de Producto", mockups_desc: "Visualización de las pantallas desarrolladas para la supervisión del cuidador y la exploración del legado.",
                 mockup_caption_1: "Figura 3: Interfaz móvil del cuidador bajo la paleta de cero fatiga visual (Modo Oscuro & Esmeralda).",
                 wp_badge: "Cumplimiento Técnico y Seguridad", wp_heading: "Whitepaper de Privacidad y Cifrado E2EE", wp_desc: "Arquitectura de Conocimiento Cero (Zero-Knowledge) diseñada para cumplir con los más altos estándares regulatorios médicos (HIPAA / GDPR).",
                 wp_point_1_title: "1. Cifrado en Tres Capas (Zero-Knowledge)", wp_point_1_text: "Los flujos de vídeo POV y datos biométricos se cifran localmente en el dispositivo mediante AES-256 antes de transmitirse. Se transportan vía TLS 1.3 y se almacenan en clústeres aislados europeos bajo claves controladas por el usuario (CMEK).",
@@ -504,7 +539,7 @@
                 stages_badge: "Klinische Ergonomie", stages_heading: "Technologische Anpassungsfähigkeit nach GDS-Stufen", stages_desc: "Automatisch mit dem Fortschreiten der Demenz mitwachsende Assistenzfunktionen.",
                 th_stage: "Kognitive Stufe", th_capacity: "Reale Handlungsfähigkeit", th_interaction: "App- / Wearable-Interaktion", th_role: "Rolle des Pflegenden",
                 st1_title: "Leichte Stufe (GDS 3)", st1_cap: "Unterstützt (1-Knopf)", st1_int: "Geführte Aufnahme von Selbst-Ankern und 1-Klick-Sprachauslöser.", st1_role: "Unterstützung bei der Routinen-Einrichtung.",
-                st2_title: "Mittlere Stufe (GDS 4-5)", st2_cap: "NULL (100% Passiv)", st2_int: "Autonome Docking-Synchronisation. Keine Berührung erforderlich.", st2_role: "Alleiniger Bediener der Gateway App.",
+                st2_title: "Mittlere Stufe (GDS 4-5)", st2_cap: "NULL (100% Pasiv)", st2_int: "Autonome Docking-Synchronisation. Keine Berührung erforderlich.", st2_role: "Alleiniger Bediener der Gateway App.",
                 st3_title: "Fortgeschritten (GDS 6-7)", st3_cap: "Sensorisch / Ultra-leicht", st3_int: "Knopfloses GPS-Armband und passives QR-Rettungssystem.", st3_role: "Sicherheitsüberwachung und Daten-Audits.",
                 safety_badge: "Aktiver Schutz & Rettung", safety_heading: "Intelligentes GPS-Rettungsarmband mit Notfall-QR", safety_desc: "Umfassende Passiv- und Aktiv-Sicherheitsmatrix für absolute Beruhigung der Familie.",
                 func_1_title: "Nächtlicher Weglauf-Alarm", func_1_desc: "Sofortiges Erkennen von Bewegungen außerhalb der normalen Schlafenszeit zur Vermeidung von Risiken.",
