@@ -10,8 +10,8 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Lora', 'serif'] },
-                    colors: { brand: { 50: '#ecfdf5', 100: '#d1fae5', 500: '#10b981', 600: '#059669', 900: '#064e3b', dark: '#0f172a' } }
+                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Lora', 'serif'], },
+                    colors: { brand: { 50: '#ecfdf5', 100: '#d1fae5', 500: '#10b981', 600: '#059669', 900: '#064e3b', dark: '#0f172a', } }
                 }
             }
         }
@@ -25,51 +25,45 @@
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-white">
 
-    <!-- Header Reestructurado: Marca Arriba, Navegación Abajo -->
-    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/90 border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-            
-            <!-- Nivel Superior: Logotipo Limpio + Nombre de Marca -->
-            <div class="flex items-center justify-between pb-3 border-b border-slate-800/50">
-                <div class="flex items-center space-x-4">
-                    <div class="w-12 h-12 rounded-xl bg-slate-900 border border-emerald-500/40 flex items-center justify-center p-2 shadow-lg shadow-emerald-500/10">
-                        <svg viewBox="0 0 100 100" class="w-full h-full text-emerald-400" fill="none">
-                            <!-- Silueta Anatómica de Cabeza (Perfil Limpio) -->
-                            <path d="M 50,12 C 72,12 88,28 88,50 C 88,64 80,74 76,82 L 70,90 L 45,90 C 38,82 32,76 24,68 C 16,60 12,50 12,38 C 12,24 28,12 50,12 Z" 
-                                  stroke="#10b981" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            
-                            <!-- Red Neuronal Interna Simplificada -->
-                            <path d="M 32,32 L 50,22 L 68,32 L 74,50 L 64,68 L 42,68 L 30,50 Z" stroke="rgba(16,185,129,0.3)" stroke-width="1.5" stroke-dasharray="2 2"/>
-                            <path d="M 50,22 L 50,50 L 64,68 M 32,32 L 50,50 L 74,50 M 30,50 L 50,50 L 42,68" stroke="#34d399" stroke-width="2" stroke-linecap="round"/>
-                            
-                            <!-- Nodos Brillantes -->
-                            <circle cx="50" cy="22" r="3.5" fill="#34d399"/>
-                            <circle cx="32" cy="32" r="3" fill="#2dd4bf"/>
-                            <circle cx="68" cy="32" r="3" fill="#34d399"/>
-                            <circle cx="30" cy="50" r="3" fill="#10b981"/>
-                            <circle cx="50" cy="50" r="4.5" fill="#a7f3d0"/>
-                            <circle cx="74" cy="50" r="3" fill="#2dd4bf"/>
-                            <circle cx="42" cy="68" r="3" fill="#34d399"/>
-                            <circle cx="64" cy="68" r="3" fill="#10b981"/>
-                        </svg>
-                    </div>
-                    <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">Chronosense<span class="text-emerald-400">.ai</span></span>
+    <!-- Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+            <!-- Logo SVG RECONSTRUIDO (Versión Vectorial Original Mejorada) -->
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-slate-900 border border-emerald-500/40 flex items-center justify-center p-1.5 shadow-lg shadow-emerald-500/10">
+                    <svg viewBox="0 0 200 200" class="w-full h-full" fill="none">
+                        <!-- Fondo sólido dentro del SVG para asegurar contraste -->
+                        <rect width="200" height="200" rx="15" fill="#0f172a"/>
+                        
+                        <!-- 1. Silueta Clara de Cabeza Humana -->
+                        <path d="M 110,35 C 150,35 175,65 175,105 C 175,130 160,150 155,165 C 150,180 145,195 130,195 L 90,195 C 85,180 80,170 70,160 C 50,140 35,120 35,95 C 35,60 65,35 110,35 Z" 
+                              stroke="#10b981" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <!-- 2. Reloj de Arena Central (Mente/Tiempo) -->
+                        <path d="M 90,70 L 130,70 L 100,125 L 130,125 M 90,125 L 120,70" stroke="#2dd4bf" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <!-- 3. Red Neuronal Interior (Líneas Sutiles) -->
+                        <path d="M 75,90 L 90,70 L 110,55 L 130,70 L 145,95 L 130,125 L 110,150 L 90,125 Z" stroke="rgba(16,185,129,0.4)" stroke-width="2" stroke-dasharray="5 5"/>
+                        <path d="M 110,55 L 110,95 L 110,150 M 75,90 L 110,95 L 145,95 M 90,125 L 110,95 L 130,125" stroke="#34d399" stroke-width="2"/>
+                        
+                        <!-- 4. Puntos Nodos (Brillantes e Interiores) -->
+                        <circle cx="110" cy="55" r="5.5" fill="#34d399"/>
+                        <circle cx="90" cy="70" r="5" fill="#2dd4bf"/>
+                        <circle cx="130" cy="70" r="5" fill="#34d399"/>
+                        <circle cx="75" cy="90" r="4.5" fill="#10b981"/>
+                        <circle cx="110" cy="95" r="7" fill="#a7f3d0"/>
+                        <circle cx="145" cy="95" r="4.5" fill="#2dd4bf"/>
+                        <circle cx="90" cy="125" r="5.5" fill="#34d399"/>
+                        <circle cx="130" cy="125" r="5.5" fill="#2dd4bf"/>
+                        <circle cx="110" cy="150" r="5" fill="#10b981"/>
+                    </svg>
                 </div>
-
-                <div class="flex items-center space-x-3">
-                    <div class="flex bg-slate-900 border border-slate-800 rounded-lg p-1 text-xs font-semibold">
-                        <button onclick="setLang('es')" id="btn-es" class="px-2.5 py-1 rounded-md bg-emerald-500 text-slate-950 transition">ES</button>
-                        <button onclick="setLang('en')" id="btn-en" class="px-2.5 py-1 rounded-md text-slate-400 hover:text-white transition">EN</button>
-                        <button onclick="setLang('de')" id="btn-de" class="px-2.5 py-1 rounded-md text-slate-400 hover:text-white transition">DE</button>
-                    </div>
-                    <a href="#partners" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-xs font-semibold rounded-lg bg-emerald-500 text-slate-950 hover:bg-emerald-400 transition shadow-md shadow-emerald-500/10" data-i18n="btn_brief">Executive Brief</a>
-                </div>
+                <span class="text-xl sm:text-2xl font-bold tracking-tight text-white">Chronosense<span class="text-emerald-400">.ai</span></span>
             </div>
-
-            <!-- Nivel Inferior: Barra de Navegación Secundaria -->
-            <nav class="flex items-center justify-center space-x-6 pt-2.5 text-xs sm:text-sm font-medium text-slate-300 overflow-x-auto whitespace-nowrap">
+            
+            <nav class="hidden lg:flex items-center space-x-6 text-sm font-medium text-slate-300">
                 <a href="#story" class="hover:text-emerald-400 transition" data-i18n="nav_story">Filosofía</a>
-                <a href="#noa" class="text-emerald-400 font-semibold hover:text-emerald-300 transition flex items-center space-x-1.5">
+                <a href="#noa" class="text-emerald-400 font-semibold hover:text-emerald-300 transition flex items-center space-x-1">
                     <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
                     <span>N.O.A. Engine</span>
                 </a>
@@ -79,27 +73,31 @@
                 <a href="#safety" class="hover:text-emerald-400 transition" data-i18n="nav_safety">Pulsera GPS & QR</a>
                 <a href="#whitepaper" class="hover:text-emerald-400 transition" data-i18n="nav_whitepaper">Whitepaper</a>
             </nav>
+
+            <div class="flex items-center space-x-4">
+                <div class="flex bg-slate-900 border border-slate-800 rounded-lg p-1 text-xs font-semibold">
+                    <button onclick="setLang('es')" id="btn-es" class="px-2.5 py-1 rounded-md bg-emerald-500 text-slate-950 transition">ES</button>
+                    <button onclick="setLang('en')" id="btn-en" class="px-2.5 py-1 rounded-md text-slate-400 hover:text-white transition">EN</button>
+                    <button onclick="setLang('de')" id="btn-de" class="px-2.5 py-1 rounded-md text-slate-400 hover:text-white transition">DE</button>
+                </div>
+                <a href="#partners" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-lg bg-emerald-500 text-slate-950 hover:bg-emerald-400 transition shadow-lg shadow-emerald-500/10" data-i18n="btn_brief">Executive Brief</a>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section con Fondo de Pantalla Limpio -->
-    <section class="relative pt-20 pb-28 overflow-hidden flex items-center justify-center">
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-950/20 via-slate-950 to-slate-950 -z-20"></div>
+    <!-- Hero Section con Marca de Agua Corregida -->
+    <section class="relative pt-24 pb-32 overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-950/30 via-slate-950 to-slate-950 -z-20"></div>
 
-        <!-- Marca de Agua: Silueta de Cabeza Limpia en Segundo Plano -->
+        <!-- Marca de Agua: Silueta Humana Gigante de Fondo -->
         <div class="absolute inset-0 flex items-center justify-center pointer-events-none -z-10 opacity-15">
-            <svg viewBox="0 0 100 100" class="w-[450px] h-[450px] sm:w-[650px] sm:h-[650px] text-emerald-400 filter drop-shadow-[0_0_60px_rgba(16,185,129,0.2)] animate-pulse" fill="none">
-                <path d="M 50,12 C 72,12 88,28 88,50 C 88,64 80,74 76,82 L 70,90 L 45,90 C 38,82 32,76 24,68 C 16,60 12,50 12,38 C 12,24 28,12 50,12 Z" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M 32,32 L 50,22 L 68,32 L 74,50 L 64,68 L 42,68 L 30,50 Z" stroke="rgba(16,185,129,0.2)" stroke-width="1" stroke-dasharray="2 2"/>
-                <path d="M 50,22 L 50,50 L 64,68 M 32,32 L 50,50 L 74,50 M 30,50 L 50,50 L 42,68" stroke="#34d399" stroke-width="1.5"/>
-                <circle cx="50" cy="22" r="2.5" fill="#34d399"/>
-                <circle cx="32" cy="32" r="2" fill="#2dd4bf"/>
-                <circle cx="68" cy="32" r="2" fill="#34d399"/>
-                <circle cx="30" cy="50" r="2" fill="#10b981"/>
-                <circle cx="50" cy="50" r="3.5" fill="#a7f3d0"/>
-                <circle cx="74" cy="50" r="2" fill="#2dd4bf"/>
-                <circle cx="42" cy="68" r="2" fill="#34d399"/>
-                <circle cx="64" cy="68" r="2" fill="#10b981"/>
+            <svg viewBox="0 0 200 200" class="w-[500px] h-[500px] sm:w-[750px] sm:h-[750px] text-emerald-400 filter drop-shadow-[0_0_80px_rgba(16,185,129,0.25)] animate-pulse" fill="none">
+                <!-- Solo la silueta exterior para evitar efecto molécula -->
+                <path d="M 110,35 C 150,35 175,65 175,105 C 175,130 160,150 155,165 C 150,180 145,195 130,195 L 90,195 C 85,180 80,170 70,160 C 50,140 35,120 35,95 C 35,60 65,35 110,35 Z" 
+                      stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- Líneas interiores muy tenues sin nodos -->
+                 <path d="M 90,70 L 130,70 L 100,125 L 130,125 M 90,125 L 120,70" stroke="#2dd4bf" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+                 <path d="M 75,90 L 90,70 L 110,55 L 130,70 L 145,95 L 130,125 L 110,150 L 90,125 Z" stroke="#34d399" stroke-width="1" stroke-dasharray="5 5" opacity="0.3"/>
             </svg>
         </div>
 
@@ -125,7 +123,7 @@
         </div>
     </section>
 
-    <!-- La Filosofía del Diario Audiovisual (El Diario de Noa) -->
+    <!-- Filosofía -->
     <section id="story" class="py-20 bg-slate-900/60 border-y border-slate-800">
         <div class="max-w-5xl mx-auto px-4 text-center">
             <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20" data-i18n="story_badge">El Origen Humano</span>
@@ -144,7 +142,7 @@
         </div>
     </section>
 
-    <!-- SECCIÓN DESTACADA: N.O.A. Engine -->
+    <!-- N.O.A. Engine -->
     <section id="noa" class="py-24 bg-slate-950 border-b border-slate-800/60 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -210,7 +208,7 @@
         </div>
     </section>
 
-    <!-- Core Pillars Section -->
+    <!-- Core Pillars -->
     <section id="pillars" class="py-24 bg-slate-900/40 border-b border-slate-800/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -250,7 +248,7 @@
         </div>
     </section>
 
-    <!-- Matriz de Adaptabilidad Clínica por Fases (GDS) -->
+    <!-- Clinical Matrix -->
     <section id="stages" class="py-24 bg-slate-950 border-b border-slate-800/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -294,7 +292,7 @@
         </div>
     </section>
 
-    <!-- GPS & QR Rescue Band -->
+    <!-- Safety & Rescue -->
     <section id="safety" class="py-24 bg-slate-900/40 border-b border-slate-800/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -350,7 +348,7 @@
         </div>
     </section>
 
-    <!-- Visual Ecosystem Mockups -->
+    <!-- Mockups -->
     <section id="mockups" class="py-24 bg-slate-950 border-b border-slate-800/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="max-w-3xl mx-auto mb-16">
@@ -368,7 +366,7 @@
         </div>
     </section>
 
-    <!-- Whitepaper Section -->
+    <!-- Whitepaper -->
     <section id="whitepaper" class="py-24 bg-slate-950 border-b border-slate-800/60">
         <div class="max-w-4xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -409,7 +407,7 @@
         </div>
     </section>
 
-    <!-- Partners / Research Section -->
+    <!-- Partners -->
     <section id="partners" class="py-24 bg-slate-900/40 border-t border-slate-800/60">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20" data-i18n="partners_badge">Strategic Partnerships</span>
@@ -461,68 +459,68 @@
                 hero_cta_1: "Ver Motor N.O.A.", hero_cta_2: "Descubrir la Historia",
                 story_badge: "El Origen Humano", story_heading: "Del Diario en Papel al Diario Audiovisual Vivo",
                 story_quote: "\"En 'El diario de Noa', un cuaderno escrito a mano leía historias de amor para intentar devolver destellos de memoria a quien lo había olvidado todo. Chronosense nace con ese mismo propósito, pero adaptado a la tecnología del siglo XXI.\"",
-                story_body_1: "Las personas con deterioro cognitivo avanzado pierden la capacidad de procesar la lectura o la palabra escrita, pero conservan intacta la memoria afectiva y auditiva.",
-                story_body_2: "Chronosense convierte las vivencias cotidianas en un diario de vídeo ambiental y autónomo que se reproduce de forma pasiva.",
-                pillars_heading: "Arquitectura Central", pillars_sub: "Tres Pilares de Cuidado y Preservación", pillars_desc: "Diseñado bajo el principio de fricción cero para el paciente.",
-                pillar_1_title: "01. Passive Zero-Touch Ingestion", pillar_1_text: "El paciente no opera ningún botón. Captura manos libres automatizada mediante wearables.", pillar_1_tag: "Cero fricción cognitiva",
-                pillar_2_title: "02. Family Cloud & Zero-Knowledge", pillar_2_text: "Cifrado local inmediato AES-256 con borrado físico automático.", pillar_2_tag: "Cifrado de extremo a extremo",
-                pillar_3_title: "03. The Legacy Vault & Self-Anchors", pillar_3_text: "Indexación con IA multimodal e integración de auto-mensajes.", pillar_3_tag: "Reorientación emocional activa",
-                stages_badge: "Ergonomía Clínica", stages_heading: "Adaptabilidad Tecnológica por Fase Clínica (GDS)", stages_desc: "Respuestas graduadas que evolucionan automáticamente.",
+                story_body_1: "Las personas con deterioro cognitivo avanzado pierden la capacidad de procesar la lectura o la palabra escrita, pero conservan intacta la memoria afectiva y auditiva. No necesitan leer un diario; necesitan ver y escuchar a las personas que aman, y sobre todo, escuchar su propia voz grabada en momentos de claridad.",
+                story_body_2: "Chronosense convierte las vivencias cotidianas en un diario de vídeo ambiental y autónomo que se reproduce de forma pasiva cuando el paciente más lo necesita, tendiendo un puente de serenidad entre el pasado y el presente.",
+                pillars_heading: "Arquitectura Central", pillars_sub: "Tres Pilares de Cuidado y Preservación", pillars_desc: "Diseñado bajo el principio de fricción cero para el paciente y tranquilidad absoluta para la familia.",
+                pillar_1_title: "01. Passive Zero-Touch Ingestion", pillar_1_text: "El paciente no opera ningún botón. Captura manos libres automatizada mediante wearables livianos con sincronización autónoma en base de carga.", pillar_1_tag: "Cero fricción cognitiva",
+                pillar_2_title: "02. Family Cloud & Zero-Knowledge", pillar_2_text: "Cifrado local inmediato AES-256 con borrado físico automático (Auto-Wipe). Almacenamiento seguro en la nube bajo estándares HIPAA/GDPR.", pillar_2_tag: "Cifrado de extremo a extremo",
+                pillar_3_title: "03. The Legacy Vault & Self-Anchors", pillar_3_text: "Indexación con IA multimodal de recuerdos vitales e integración de auto-mensajes grabados en fases tempranas para reorientación afectiva.", pillar_3_tag: "Reorientación emocional activa",
+                stages_badge: "Ergonomía Clínica", stages_heading: "Adaptabilidad Tecnológica por Fase Clínica (GDS)", stages_desc: "Respuestas graduadas que evolucionan automáticamente con la progresión del deterioro cognitivo del paciente.",
                 th_stage: "Fase Cognitiva", th_capacity: "Maniobrabilidad Real", th_interaction: "Interacción con la App / Wearable", th_role: "Rol del Cuidador",
-                st1_title: "Fase Leve (GDS 3)", st1_cap: "Asistida (Botonera simple)", st1_int: "Grabación guiada de Auto-Anclas N.O.A. y activación por voz.", st1_role: "Supervisión y co-configuración.",
-                st2_title: "Fase Moderada (GDS 4-5)", st2_cap: "NULA (100% Pasiva)", st2_int: "Sincronización autónoma en base de carga.", st2_role: "Operador único de la Gateway App.",
-                st3_title: "Fase Avanzada (GDS 6-7)", st3_cap: "Sensorial / Híper-ligera", st3_int: "Geolocalización por pulsera hipoalergénica sin botones.", st3_role: "Recuperación de historiales.",
-                safety_badge: "Protección Activa y Rescate", safety_heading: "Pulsera GPS Inteligente con QR de Emergencia", safety_desc: "Una matriz completa de funciones de seguridad pasiva y activa.",
-                func_1_title: "Aviso de Salida Nocturna", func_1_desc: "Detectar de forma inmediata desplazamientos fuera del horario habitual.",
-                func_2_title: "Batería Inteligente", func_2_desc: "Aviso automatizado anticipado al cuidador cuando la pulsera necesita cargarse.",
-                func_3_title: "Detección de Inmovilidad", func_3_desc: "Alertar de inmediato ante periodos inusuales de inactividad.",
-                func_4_title: "Modo Emergencia SOS", func_4_desc: "Capacidad de avisar simultáneamente a varios familiares.",
-                func_5_title: "Historial de Recorridos", func_5_desc: "Consultar desplazamientos anteriores y patrones de ruta.",
-                func_6_title: "Detección de Retirada", func_6_desc: "Alerta instantánea si la persona se quita la pulsera.",
-                mockups_heading: "Ecosistema Visual de Chronosense", mockups_sub: "Interfaces de Usuario y Arquitectura de Producto", mockups_desc: "Visualización de las pantallas desarrolladas.",
-                mockup_caption_1: "Figura 3: Interfaz móvil del cuidador.",
-                wp_badge: "Cumplimiento Técnico y Seguridad", wp_heading: "Whitepaper de Privacidad y Cifrado E2EE", wp_desc: "Arquitectura de Conocimiento Cero.",
-                wp_point_1_title: "1. Cifrado en Tres Capas", wp_point_1_text: "Vídeo POV y datos biométricos cifrados vía AES-256.",
-                wp_point_2_title: "2. Rescate QR con Tokens Efímeros", wp_point_2_text: "UUID aleatorio con sesión efímera.",
-                wp_point_3_title: "3. Cumplimiento Normativo Estricto", wp_point_3_text: "Preparado para HIPAA y GDPR.",
+                st1_title: "Fase Leve (GDS 3)", st1_cap: "Asistida (Botonera simple)", st1_int: "Grabación guiada de Auto-Anclas N.O.A. y activación por voz en un toque.", st1_role: "Supervisión y co-configuración de rutinas.",
+                st2_title: "Fase Moderada (GDS 4-5)", st2_cap: "NULA (100% Pasiva)", st2_int: "Sincronización autónoma en base de carga. Cero interacción táctil requerida.", st2_role: "Operador único de la Gateway App y monitorización de alertas.",
+                st3_title: "Fase Avanzada (GDS 6-7)", st3_cap: "Sensorial / Híper-ligera", st3_int: "Geolocalización por pulsera hipoalergénica sin botones y rescate QR pasivo.", st3_role: "Recuperación de historiales y supervisión de seguridad activa.",
+                safety_badge: "Protección Activa y Rescate", safety_heading: "Pulsera GPS Inteligente con QR de Emergencia", safety_desc: "Una matriz completa de funciones de seguridad pasiva y activa diseñada para la tranquilidad absoluta de la familia y la autonomía protegida del paciente.",
+                func_1_title: "Aviso de Salida Nocturna", func_1_desc: "Detectar de forma inmediata desplazamientos fuera del horario habitual de descanso para prevenir riesgos en la calle.",
+                func_2_title: "Batería Inteligente", func_2_desc: "Aviso automatizado anticipado al cuidador cuando la pulsera necesita cargarse, garantizando autonomía continua.",
+                func_3_title: "Detección de Inmovilidad", func_3_desc: "Alertar de inmediato ante periodos inusuales de inactividad o posibles caídas dentro o fuera del hogar.",
+                func_4_title: "Modo Emergencia SOS", func_4_desc: "Capacidad de avisar simultáneamente a varios familiares y contactos de confianza con un solo toque o comando.",
+                func_5_title: "Historial de Recorridos", func_5_desc: "Consultar desplazamientos anteriores y patrones de ruta habituales para una mejor supervisión médica.",
+                func_6_title: "Detección de Retirada", func_6_desc: "Alerta instantánea al cuidador si la persona se quita la pulsera de la muñeca de forma voluntaria o accidental.",
+                mockups_heading: "Ecosistema Visual de Chronosense", mockups_sub: "Interfaces de Usuario y Arquitectura de Producto", mockups_desc: "Visualización de las pantallas desarrolladas para la supervisión del cuidador y la exploración del legado.",
+                mockup_caption_1: "Figura 3: Interfaz móvil del cuidador bajo la paleta de cero fatiga visual (Modo Oscuro & Esmeralda).",
+                wp_badge: "Cumplimiento Técnico y Seguridad", wp_heading: "Whitepaper de Privacidad y Cifrado E2EE", wp_desc: "Arquitectura de Conocimiento Cero (Zero-Knowledge) diseñada para cumplir con los más altos estándares regulatorios médicos (HIPAA / GDPR).",
+                wp_point_1_title: "1. Cifrado en Tres Capas (Zero-Knowledge)", wp_point_1_text: "Los flujos de vídeo POV y datos biométricos se cifran localmente en el dispositivo mediante AES-256 antes de transmitirse. Se transportan vía TLS 1.3.",
+                wp_point_2_title: "2. Rescate QR con Tokens Efímeros", wp_point_2_text: "El código QR de la pulsera contiene un UUID aleatorio que no expone datos personales. Al escanearse, genera una sesión efímera que muestra el vídeo de identidad.",
+                wp_point_3_title: "3. Cumplimiento Normativo Estricto", wp_point_3_text: "Preparado para la firma de acuerdos BAA (HIPAA) y cumplimiento nativo del GDPR europeo.",
                 wp_download_btn: "Descargar Whitepaper Completo (Markdown)",
-                partners_badge: "Alianzas Estratégicas", partners_heading: "Conecta con Chronosense", partners_desc: "¿Eres investigador en IA, líder de producto o inversor?",
+                partners_badge: "Alianzas Estratégicas", partners_heading: "Conecta con Chronosense", partners_desc: "¿Eres investigador en IA, líder de producto en HealthTech o inversor interesado en soluciones de asistencia cognitiva? Estamos abriendo vías de validación.",
                 form_label_name: "Nombre completo o Institución", form_label_email: "Correo de contacto profesional", form_label_msg: "Mensaje o Interés de Validación", form_submit: "Solicitar Dossier Ejecutivo",
                 footer_copy: "© 2026 Chronosense Project. All rights reserved. Confidential Executive Concept."
             },
             en: {
                 nav_story: "Philosophy", nav_pillars: "Pillars", nav_stages: "Clinical Matrix", nav_mockups: "Mockups", nav_safety: "GPS & QR Band", nav_whitepaper: "Whitepaper", btn_brief: "Executive Brief",
                 hero_badge: "Zero-Touch Ambient AI & Legacy Preservation", hero_title_1: "Preserving the Legacy,", hero_title_2: "Protecting the Present.",
-                hero_desc: "The living video notebook of a person's life, powered by the N.O.A. orientation engine.",
+                hero_desc: "The living video notebook of a person's life, powered by the N.O.A. orientation engine when written words are no longer enough.",
                 hero_cta_1: "View N.O.A. Engine", hero_cta_2: "Discover the Story",
                 story_badge: "Human Origin", story_heading: "From Paper Notebook to Living Video Journal",
-                story_quote: "\"In 'The Notebook', a handwritten journal read love stories to bring back sparks of memory.\"",
-                story_body_1: "People with advanced cognitive decline preserve affective and auditory memory.",
-                story_body_2: "Chronosense turns daily experiences into an ambient video journal played passively.",
-                pillars_heading: "Core Architecture", pillars_sub: "Three Pillars of Care & Preservation", pillars_desc: "Engineered under zero cognitive friction.",
-                pillar_1_title: "01. Passive Zero-Touch Ingestion", pillar_1_text: "No patient interaction required. Automated hands-free capture.", pillar_1_tag: "Zero cognitive friction",
-                pillar_2_title: "02. Family Cloud & Zero-Knowledge", pillar_2_text: "Immediate on-device AES-256 encryption.", pillar_2_tag: "End-to-end encrypted",
-                pillar_3_title: "03. The Legacy Vault & Self-Anchors", pillar_3_text: "Multimodal AI indexing combined with pre-recorded self-prompts.", pillar_3_tag: "Active affective grounding",
-                stages_badge: "Clinical Ergonomics", stages_heading: "Technological Adaptability by Clinical Stage (GDS)", stages_desc: "Graduated responses evolving automatically.",
+                story_quote: "\"In 'The Notebook', a handwritten journal read love stories to bring back sparks of memory. Chronosense was born from that exact purpose.\"",
+                story_body_1: "People with advanced cognitive decline preserve affective and auditory memory. They need to see and hear the people they love.",
+                story_body_2: "Chronosense turns daily experiences into an ambient video journal played passively when needed most.",
+                pillars_heading: "Core Architecture", pillars_sub: "Three Pillars of Care & Preservation", pillars_desc: "Engineered under zero cognitive friction for patients and complete peace of mind for families.",
+                pillar_1_title: "01. Passive Zero-Touch Ingestion", pillar_1_text: "No patient interaction required. Automated hands-free capture via lightweight wearables.", pillar_1_tag: "Zero cognitive friction",
+                pillar_2_title: "02. Family Cloud & Zero-Knowledge", pillar_2_text: "Immediate on-device AES-256 encryption with local Auto-Wipe. Secure storage compliant with HIPAA and GDPR.", pillar_2_tag: "End-to-end encrypted",
+                pillar_3_title: "03. The Legacy Vault & Self-Anchors", pillar_3_text: "Multimodal AI indexing of memories combined with pre-recorded self-prompts.", pillar_3_tag: "Active affective grounding",
+                stages_badge: "Clinical Ergonomics", stages_heading: "Technological Adaptability by Clinical Stage (GDS)", stages_desc: "Graduated responses that evolve automatically with cognitive decline progression.",
                 th_stage: "Cognitive Stage", th_capacity: "Real Manoeuvrability", th_interaction: "App / Wearable Interaction", th_role: "Caregiver Role",
-                st1_title: "Mild Stage (GDS 3)", st1_cap: "Assisted (Single button)", st1_int: "Guided N.O.A. Self-Anchor recording.", st1_role: "Routine co-configuration.",
-                st2_title: "Moderate Stage (GDS 4-5)", st2_cap: "NONE (100% Passive)", st2_int: "Autonomous docking sync.", st2_role: "Primary Gateway App operator.",
-                st3_title: "Advanced Stage (GDS 6-7)", st3_cap: "Sensory / Ultra-light", st3_int: "Buttonless GPS bracelet and QR rescue.", st3_role: "Safety audit.",
-                safety_badge: "Active Protection & Rescue", safety_heading: "Smart GPS Rescue Band with Emergency QR", safety_desc: "A comprehensive matrix of safety features.",
+                st1_title: "Mild Stage (GDS 3)", st1_cap: "Assisted (Single button)", st1_int: "Guided N.O.A. Self-Anchor recording.", st1_role: "Routine co-configuration and support.",
+                st2_title: "Moderate Stage (GDS 4-5)", st2_cap: "NONE (100% Passive)", st2_int: "Autonomous docking sync. Zero touch interaction required.", st2_role: "Primary Gateway App operator.",
+                st3_title: "Advanced Stage (GDS 6-7)", st3_cap: "Sensory / Ultra-light", st3_int: "Buttonless GPS bracelet and passive QR rescue.", st3_role: "Safety audit and historical tracking.",
+                safety_badge: "Active Protection & Rescue", safety_heading: "Smart GPS Rescue Band with Emergency QR", safety_desc: "A comprehensive matrix of passive and active safety features.",
                 func_1_title: "Night Wandering Alert", func_1_desc: "Immediately detect movements outside normal sleeping hours.",
-                func_2_title: "Smart Battery", func_2_desc: "Early automated notification when charging is needed.",
-                func_3_title: "Immobility Detection", func_3_desc: "Alert instantly against unusual periods of inactivity.",
-                func_4_title: "SOS Emergency Mode", func_4_desc: "Simultaneously alert multiple family members.",
-                func_5_title: "Route History", func_5_desc: "Review past movements and travel patterns.",
+                func_2_title: "Smart Battery", func_2_desc: "Early automated notification when the band needs charging.",
+                func_3_title: "Immobility Detection", func_3_desc: "Alert instantly against unusual periods of inactivity or potential falls.",
+                func_4_title: "SOS Emergency Mode", func_4_desc: "Simultaneously alert multiple family members with a single tap.",
+                func_5_title: "Route History", func_5_desc: "Review past movements and routine travel patterns.",
                 func_6_title: "Removal Detection", func_6_desc: "Instant caregiver alert if the band is removed.",
                 mockups_heading: "Chronosense Visual Ecosystem", mockups_sub: "User Interfaces & Product Architecture", mockups_desc: "Visual walkthrough of caregiver interfaces.",
-                mockup_caption_1: "Figure 3: Caregiver mobile UI.",
-                wp_badge: "Technical Compliance & Security", wp_heading: "Privacy & E2EE Encryption Whitepaper", wp_desc: "Zero-Knowledge architecture.",
-                wp_point_1_title: "1. Three-Layer Zero-Knowledge Encryption", wp_point_1_text: "POV video streams encrypted locally.",
-                wp_point_2_title: "2. QR Rescue with Ephemeral Tokens", wp_point_2_text: "QR code generates an ephemeral session.",
-                wp_point_3_title: "3. Strict Regulatory Compliance", wp_point_3_text: "Ready for HIPAA and GDPR compliance.",
+                mockup_caption_1: "Figure 3: Caregiver mobile UI under zero-fatigue palette.",
+                wp_badge: "Technical Compliance & Security", wp_heading: "Privacy & E2EE Encryption Whitepaper", wp_desc: "Zero-Knowledge architecture engineered to comply with HIPAA and GDPR.",
+                wp_point_1_title: "1. Three-Layer Zero-Knowledge Encryption", wp_point_1_text: "POV video streams are encrypted locally on-device via AES-256.",
+                wp_point_2_title: "2. QR Rescue with Ephemeral Tokens", wp_point_2_text: "The band's QR code generates an ephemeral session displaying identity video.",
+                wp_point_3_title: "3. Strict Regulatory Compliance", wp_point_3_text: "Ready for BAA agreements (HIPAA) and native European GDPR compliance.",
                 wp_download_btn: "Download Full Whitepaper (Markdown)",
-                partners_badge: "Strategic Partnerships", partners_heading: "Connect with Chronosense", partners_desc: "Are you an AI researcher or investor?",
+                partners_badge: "Strategic Partnerships", partners_heading: "Connect with Chronosense", partners_desc: "Are you an AI researcher, HealthTech product lead, or investor?",
                 form_label_name: "Full Name or Institution", form_label_email: "Professional Contact Email", form_label_msg: "Message or Validation Interest", form_submit: "Request Executive Brief",
                 footer_copy: "© 2026 Chronosense Project. All rights reserved. Confidential Executive Concept."
             },
@@ -532,7 +530,7 @@
                 hero_desc: "Das lebendige Video-Tagebuch, angetrieben vom N.O.A.-Orientierungsmotor.",
                 hero_cta_1: "N.O.A.-Motor Anzeigen", hero_cta_2: "Geschichte Entdecken",
                 story_badge: "Menschlicher Ursprung", story_heading: "Vom Papier-Tagebuch zum lebendigen Video-Journal",
-                story_quote: "\"In 'Wie ein einziger Tag' las ein Tagebuch Liebesgeschichten vor.\"",
+                story_quote: "\"In 'Wie ein einziger Tag' las ein Tagebuch Liebesgeschichten vor, um Erinnerungsfunken zu wecken.\"",
                 story_body_1: "Menschen mit fortgeschrittener Demenz bewahren das emotionale Gedächtnis.",
                 story_body_2: "Chronosense verwandelt alltägliche Erlebnisse in ein umgebendes Video-Tagebuch.",
                 pillars_heading: "Kernarchitektur", pillars_sub: "Drei Säulen der Pflege & Bewahrung", pillars_desc: "Entwickelt für null kognitive Reibung.",
@@ -553,13 +551,13 @@
                 func_6_title: "Abnahme-Erkennung", func_6_desc: "Sofortiger Alarm, falls das Armband abgenommen wird.",
                 mockups_heading: "Visuelles Ökosystem", mockups_sub: "Benutzeroberflächen & Produktarchitektur", mockups_desc: "Visueller Rundgang durch die Schnittstellen.",
                 mockup_caption_1: "Abbildung 3: Mobile Pfleger-UI.",
-                wp_badge: "Technische Konformität & Sicherheit", wp_heading: "Datenschutz- & E2EE-Whitepaper", wp_desc: "Zero-Knowledge-Architektur.",
+                wp_badge: "Technische Konformität & Sicherheit", wp_heading: "Datenschutz- & E2EE-Whitepaper", wp_desc: "Zero-Knowledge-Architektur nach HIPAA und DSGVO.",
                 wp_point_1_title: "1. Dreistufige Zero-Knowledge-Verschlüsselung", wp_point_1_text: "POV-Videostreams werden lokal verschlüsselt.",
                 wp_point_2_title: "2. QR-Rettung mit Ephemeren Token", wp_point_2_text: "QR-Code erzeugt eine ephemere Sitzung.",
                 wp_point_3_title: "3. Strikte Einhaltung Vorschriften", wp_point_3_text: "Vorbereitet für HIPAA und DSGVO.",
                 wp_download_btn: "Vollständiges Whitepaper Herunterladen (Markdown)",
                 partners_badge: "Strategische Partnerschaften", partners_heading: "Mit Chronosense verbinden", partners_desc: "Sind Sie KI-Forscher oder Investor?",
-                form_label_name: "Vollständiger Name oder Institution", form_label_email: "Berufliche E-Mail-Adresse", form_label_msg: "Nachricht oder Validierungsinteresse", form_submit: "Executive Brief Anfordern",
+                form_label_name: "Verständiger Name oder Institution", form_label_email: "Berufliche E-Mail-Adresse", form_label_msg: "Nachricht oder Validierungsinteresse", form_submit: "Executive Brief Anfordern",
                 footer_copy: "© 2026 Chronosense Project. Alle Rechte vorbehalten. Vertrauliches Konzept."
             }
         };
