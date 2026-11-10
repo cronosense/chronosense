@@ -36,6 +36,7 @@
             </div>
             
             <nav class="hidden lg:flex items-center space-x-6 text-sm font-medium text-slate-300">
+                <a href="#story" class="hover:text-emerald-400 transition" data-i18n="nav_story">Filosofía</a>
                 <a href="#pillars" class="hover:text-emerald-400 transition" data-i18n="nav_pillars">Pilares</a>
                 <a href="#anchors" class="hover:text-emerald-400 transition" data-i18n="nav_anchors">Auto-Anclas</a>
                 <a href="#stages" class="hover:text-emerald-400 transition" data-i18n="nav_stages">Matriz Clínica</a>
@@ -67,21 +68,40 @@
                 <span data-i18n="hero_title_1">Preserving the Legacy,</span><br>
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200" data-i18n="hero_title_2">Protecting the Present.</span>
             </h1>
-            <p class="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto mb-10 font-serif italic" data-i18n="hero_desc">"Volver a pasar por el corazón": Ecosistema de asistencia pasiva sin fricción que combina auto-anclas grabadas en fase temprana, captura pasiva Zero-Touch y geolocalización segura de rescate.</p>
+            <p class="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto mb-10 font-serif italic" data-i18n="hero_desc">"Volver a pasar por el corazón": El diario audiovisual de la vida de una persona, capturado de forma pasiva e inteligente para guiar su presente cuando las palabras escritas no bastan.</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#anchors" class="px-8 py-4 rounded-xl bg-emerald-500 text-slate-950 font-semibold hover:bg-emerald-400 transition shadow-xl shadow-emerald-500/20 flex items-center justify-center space-x-2">
-                    <span data-i18n="hero_cta_1">Ver Protocolo de Auto-Anclas</span>
+                <a href="#story" class="px-8 py-4 rounded-xl bg-emerald-500 text-slate-950 font-semibold hover:bg-emerald-400 transition shadow-xl shadow-emerald-500/20 flex items-center justify-center space-x-2">
+                    <span data-i18n="hero_cta_1">Descubrir la Historia</span>
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                 </a>
-                <a href="#mockups" class="px-8 py-4 rounded-xl bg-slate-900 border border-slate-800 text-white font-semibold hover:bg-slate-800 transition flex items-center justify-center space-x-2">
-                    <span data-i18n="hero_cta_2">Explorar Mockups Interactivos</span>
+                <a href="#anchors" class="px-8 py-4 rounded-xl bg-slate-900 border border-slate-800 text-white font-semibold hover:bg-slate-800 transition flex items-center justify-center space-x-2">
+                    <span data-i18n="hero_cta_2">Ver Protocolo de Auto-Anclas</span>
                 </a>
             </div>
         </div>
     </section>
 
+    <!-- NUEVA SECCIÓN: La Filosofía del Diario Audiovisual (El Diario de Noa) -->
+    <section id="story" class="py-20 bg-slate-900/60 border-y border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20" data-i18n="story_badge">El Origen Humano</span>
+            <h2 class="text-3xl font-bold text-white mt-4 mb-6" data-i18n="story_heading">Del Diario en Papel al Diario Audiovisual Vivo</h2>
+            <div class="p-8 rounded-2xl bg-slate-950 border border-slate-800 shadow-xl text-left space-y-4">
+                <p class="text-slate-300 text-base leading-relaxed font-serif italic border-l-4 border-emerald-500 pl-4" data-i18n="story_quote">
+                    "En 'El diario de Noa', un cuaderno escrito a mano leía historias de amor para intentar devolver destellos de memoria a quien lo había olvidado todo. Chronosense nace con ese mismo propósito, pero adaptado a la tecnología del siglo XXI."
+                </p>
+                <p class="text-slate-400 text-sm leading-relaxed" data-i18n="story_body_1">
+                    Las personas con deterioro cognitivo avanzado pierden la capacidad de procesar la lectura o la palabra escrita, pero conservan intacta la memoria afectiva y auditiva. No necesitan leer un diario; necesitan **ver y escuchar** a las personas que aman, y sobre todo, escuchar **su propia voz grabada en momentos de claridad**.
+                </p>
+                <p class="text-slate-400 text-sm leading-relaxed" data-i18n="story_body_2">
+                    Chronosense convierte las vivencias cotidianas en un **diario de vídeo ambiental y autónomo** que se reproduce de forma pasiva cuando el paciente más lo necesita, tendiendo un puente de serenidad entre el pasado y el presente.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- Core Pillars Section -->
-    <section id="pillars" class="py-24 bg-slate-900/40 border-y border-slate-800/60">
+    <section id="pillars" class="py-24 bg-slate-950 border-b border-slate-800/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-3xl font-bold text-white mb-4" data-i18n="pillars_heading">Core Architecture</h2>
@@ -120,8 +140,8 @@
         </div>
     </section>
 
-    <!-- NUEVA SECCIÓN: Módulo de Auto-Anclas (Self-Anchors) -->
-    <section id="anchors" class="py-24 bg-slate-950 border-b border-slate-800/60">
+    <!-- Módulo de Auto-Anclas (Self-Anchors) -->
+    <section id="anchors" class="py-24 bg-slate-900/40 border-b border-slate-800/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20" data-i18n="anchors_badge">Early-Stage Dignity Protocol</span>
@@ -154,8 +174,8 @@
         </div>
     </section>
 
-    <!-- NUEVA SECCIÓN: Matriz de Adaptabilidad Clínica por Fases (GDS) -->
-    <section id="stages" class="py-24 bg-slate-900/40 border-b border-slate-800/60">
+    <!-- Matriz de Adaptabilidad Clínica por Fases (GDS) -->
+    <section id="stages" class="py-24 bg-slate-950 border-b border-slate-800/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20" data-i18n="stages_badge">Clinical Ergonomics</span>
@@ -199,7 +219,7 @@
     </section>
 
     <!-- SECTION: GPS & QR Rescue Band -->
-    <section id="safety" class="py-24 bg-slate-950 border-b border-slate-800/60">
+    <section id="safety" class="py-24 bg-slate-900/40 border-b border-slate-800/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20" data-i18n="safety_badge">Active Protection & Rescue</span>
@@ -254,8 +274,8 @@
         </div>
     </section>
 
-    <!-- SECTION: Visual Ecosystem Mockups -->
-    <section id="mockups" class="py-24 bg-slate-900/40 border-b border-slate-800/60">
+    <!-- Visual Ecosystem Mockups -->
+    <section id="mockups" class="py-24 bg-slate-955 border-b border-slate-800/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="max-w-3xl mx-auto mb-16">
                 <h2 class="text-3xl font-bold text-white mb-4" data-i18n="mockups_heading">Ecosistema Visual de Chronosense</h2>
@@ -272,7 +292,7 @@
         </div>
     </section>
 
-    <!-- SECTION: Whitepaper -->
+    <!-- Whitepaper Section -->
     <section id="whitepaper" class="py-24 bg-slate-950 border-b border-slate-800/60">
         <div class="max-w-4xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -359,10 +379,14 @@
     <script>
         const translations = {
             es: {
-                nav_pillars: "Pilares", nav_anchors: "Auto-Anclas", nav_stages: "Matriz Clínica", nav_mockups: "Mockups", nav_safety: "Pulsera GPS & QR", nav_whitepaper: "Whitepaper", btn_brief: "Executive Brief",
+                nav_story: "Filosofía", nav_pillars: "Pilares", nav_anchors: "Auto-Anclas", nav_stages: "Matriz Clínica", nav_mockups: "Mockups", nav_safety: "Pulsera GPS & QR", nav_whitepaper: "Whitepaper", btn_brief: "Executive Brief",
                 hero_badge: "Zero-Touch Ambient AI & Legacy Preservation", hero_title_1: "Preserving the Legacy,", hero_title_2: "Protecting the Present.",
-                hero_desc: "\"Volver a pasar por el corazón\": Ecosistema de asistencia pasiva sin fricción que combina auto-anclas grabadas en fase temprana, captura pasiva Zero-Touch y geolocalización segura de rescate.",
-                hero_cta_1: "Ver Protocolo de Auto-Anclas", hero_cta_2: "Explorar Mockups Interactivos",
+                hero_desc: "\"Volver a pasar por el corazón\": El diario audiovisual de la vida de una persona, capturado de forma pasiva e inteligente para guiar su presente cuando las palabras escritas no bastan.",
+                hero_cta_1: "Descubrir la Historia", hero_cta_2: "Ver Protocolo de Auto-Anclas",
+                story_badge: "El Origen Humano", story_heading: "Del Diario en Papel al Diario Audiovisual Vivo",
+                story_quote: "\"En 'El diario de Noa', un cuaderno escrito a mano leía historias de amor para intentar devolver destellos de memoria a quien lo había olvidado todo. Chronosense nace con ese mismo propósito, pero adaptado a la tecnología del siglo XXI.\"",
+                story_body_1: "Las personas con deterioro cognitivo avanzado pierden la capacidad de procesar la lectura o la palabra escrita, pero conservan intacta la memoria afectiva y auditiva. No necesitan leer un diario; necesitan ver y escuchar a las personas que aman, y sobre todo, escuchar su propia voz grabada en momentos de claridad.",
+                story_body_2: "Chronosense convierte las vivencias cotidianas en un diario de vídeo ambiental y autónomo que se reproduce de forma pasiva cuando el paciente más lo necesita, tendiendo un puente de serenidad entre el pasado y el presente.",
                 pillars_heading: "Arquitectura Central", pillars_sub: "Tres Pilares de Cuidado y Preservación", pillars_desc: "Diseñado bajo el principio de fricción cero para el paciente y tranquilidad absoluta para la familia.",
                 pillar_1_title: "01. Passive Zero-Touch Ingestion", pillar_1_text: "El paciente no opera ningún botón. Captura manos libres automatizada mediante wearables livianos con sincronización autónoma en base de carga.", pillar_1_tag: "Cero fricción cognitiva",
                 pillar_2_title: "02. Family Cloud & Zero-Knowledge", pillar_2_text: "Cifrado local inmediato AES-256 con borrado físico automático (Auto-Wipe). Almacenamiento seguro en la nube bajo estándares HIPAA/GDPR.", pillar_2_tag: "Cifrado de extremo a extremo",
@@ -395,10 +419,14 @@
                 footer_copy: "© 2026 Chronosense Project. All rights reserved. Confidential Executive Concept."
             },
             en: {
-                nav_pillars: "Pillars", nav_anchors: "Self-Anchors", nav_stages: "Clinical Matrix", nav_mockups: "Mockups", nav_safety: "GPS & QR Band", nav_whitepaper: "Whitepaper", btn_brief: "Executive Brief",
+                nav_story: "Philosophy", nav_pillars: "Pillars", nav_anchors: "Self-Anchors", nav_stages: "Clinical Matrix", nav_mockups: "Mockups", nav_safety: "GPS & QR Band", nav_whitepaper: "Whitepaper", btn_brief: "Executive Brief",
                 hero_badge: "Zero-Touch Ambient AI & Legacy Preservation", hero_title_1: "Preserving the Legacy,", hero_title_2: "Protecting the Present.",
-                hero_desc: "A friction-free passive assistance ecosystem combining early-stage self-anchors, Zero-Touch capture, and secure rescue geolocation.",
-                hero_cta_1: "View Self-Anchors Protocol", hero_cta_2: "Explore Visual Mockups",
+                hero_desc: "The living video notebook of a person's life, passively captured to guide their present when written words are no longer enough.",
+                hero_cta_1: "Discover the Story", hero_cta_2: "View Self-Anchors Protocol",
+                story_badge: "Human Origin", story_heading: "From Paper Notebook to Living Video Journal",
+                story_quote: "\"In 'The Notebook', a handwritten journal read love stories to bring back sparks of memory to someone who had forgotten everything. Chronosense was born from that exact purpose, brought into 21st-century technology.\"",
+                story_body_1: "People with advanced cognitive decline lose the ability to process reading, but preserve affective and auditory memory. They don't need a paper diary; they need to see and hear the people they love, and hear their own voice from moments of clarity.",
+                story_body_2: "Chronosense turns daily experiences into an ambient video journal played passively when needed most, bridging past and present.",
                 pillars_heading: "Core Architecture", pillars_sub: "Three Pillars of Care & Preservation", pillars_desc: "Engineered under zero cognitive friction for patients and complete peace of mind for families.",
                 pillar_1_title: "01. Passive Zero-Touch Ingestion", pillar_1_text: "No patient interaction required. Automated hands-free capture via lightweight wearables with docking auto-sync.", pillar_1_tag: "Zero cognitive friction",
                 pillar_2_title: "02. Family Cloud & Zero-Knowledge", pillar_2_text: "Immediate on-device AES-256 encryption with local Auto-Wipe. Secure storage compliant with HIPAA and GDPR.", pillar_2_tag: "End-to-end encrypted",
@@ -431,10 +459,14 @@
                 footer_copy: "© 2026 Chronosense Project. All rights reserved. Confidential Executive Concept."
             },
             de: {
-                nav_pillars: "Säulen", nav_anchors: "Self-Anchors", nav_stages: "Klinische Matrix", nav_mockups: "Mockups", nav_safety: "GPS & QR Armband", nav_whitepaper: "Whitepaper", btn_brief: "Executive Brief",
+                nav_story: "Philosophie", nav_pillars: "Säulen", nav_anchors: "Self-Anchors", nav_stages: "Klinische Matrix", nav_mockups: "Mockups", nav_safety: "GPS & QR Armband", nav_whitepaper: "Whitepaper", btn_brief: "Executive Brief",
                 hero_badge: "Zero-Touch Ambient AI & Legacy Preservation", hero_title_1: "Das Erbe bewahren,", hero_title_2: "die Gegenwart schützen.",
-                hero_desc: "Ein reibungsfreies ambientales Assistenzsystem, das frühzeitig aufgenommene Selbst-Anker mit Zero-Touch-Erfassung kombiniert.",
-                hero_cta_1: "Selbst-Anker-Protokoll Anzeigen", hero_cta_2: "Visuelle Mockups Erkunden",
+                hero_desc: "Das lebendige Video-Tagebuch eines Lebens, passiv erfasst zur Orientierung in der Gegenwart.",
+                hero_cta_1: "Die Geschichte Entdecken", hero_cta_2: "Selbst-Anker Anzeigen",
+                story_badge: "Menschlicher Ursprung", story_heading: "Vom Papier-Tagebuch zum lebendigen Video-Journal",
+                story_quote: "\"In 'Wie ein einziger Tag' las ein Tagebuch Liebesgeschichten vor, um Erinnerungsfunken zu wecken. Chronosense wurde aus genau diesem Zweck geboren, angepasst an die Technologie des 21. Jahrhunderts.\"",
+                story_body_1: "Menschen mit fortgeschrittener Demenz verlieren die Fähigkeit zu lesen, bewahren aber das emotionale Gedächtnis. Sie müssen ihre geliebten Menschen sehen und hören.",
+                story_body_2: "Chronosense verwandelt alltägliche Erlebnisse in ein umgebendes Video-Tagebuch, das passiv abgespielt wird, wenn es am meisten gebraucht wird.",
                 pillars_heading: "Kernarchitektur", pillars_sub: "Drei Säulen der Pflege & Bewahrung", pillars_desc: "Entwickelt für null kognitive Reibung auf Patientenseite und absolute Sicherheit für Angehörige.",
                 pillar_1_title: "01. Passive Zero-Touch Ingestion", pillar_1_text: "Keine Interaktion durch den Patienten. Automatische Freihand-Erfassung über leichte Wearables mit Docking-Synchronisierung.", pillar_1_tag: "Null kognitive Reibung",
                 pillar_2_title: "02. Family Cloud & Zero-Knowledge", pillar_2_text: "Sofortige AES-256-Verschlüsselung auf dem Gerät mit Auto-Wipe. Sichere Speicherung nach HIPAA/DSGVO.", pillar_2_tag: "Ende-zu-Ende verschlüsselt",
