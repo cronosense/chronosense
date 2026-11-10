@@ -17,21 +17,10 @@
         }
     </script>
     <style>
-        /* Estilos profesionales y visibles para la barra de desplazamiento (Scrollbar) */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #020617;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #10b981;
-            border-radius: 5px;
-            border: 2px solid #020617;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #059669;
-        }
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #10b981; border-radius: 5px; border: 2px solid #020617; }
+        ::-webkit-scrollbar-thumb:hover { background: #059669; }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-white">
@@ -40,20 +29,19 @@
     <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <!-- LOGOTIPO CORPORATIVO INTEGRADO -->
                 <div class="w-10 h-10 flex items-center justify-center">
                     <img src="image_0.png" alt="Chronosense.ai Logo" class="w-full h-full object-contain">
                 </div>
                 <span class="text-xl font-bold tracking-tight text-white">Chronosense<span class="text-emerald-400">.ai</span></span>
             </div>
             
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+            <nav class="hidden lg:flex items-center space-x-6 text-sm font-medium text-slate-300">
                 <a href="#pillars" class="hover:text-emerald-400 transition" data-i18n="nav_pillars">Pilares</a>
+                <a href="#anchors" class="hover:text-emerald-400 transition" data-i18n="nav_anchors">Auto-Anclas</a>
+                <a href="#stages" class="hover:text-emerald-400 transition" data-i18n="nav_stages">Matriz Clínica</a>
                 <a href="#mockups" class="hover:text-emerald-400 transition" data-i18n="nav_mockups">Mockups</a>
                 <a href="#safety" class="hover:text-emerald-400 transition" data-i18n="nav_safety">Pulsera GPS & QR</a>
-                <a href="#ethics" class="hover:text-emerald-400 transition" data-i18n="nav_ethics">Ética Médica</a>
                 <a href="#whitepaper" class="hover:text-emerald-400 transition" data-i18n="nav_whitepaper">Whitepaper</a>
-                <a href="#partners" class="hover:text-emerald-400 transition" data-i18n="nav_partners">Partners</a>
             </nav>
 
             <div class="flex items-center space-x-4">
@@ -73,20 +61,20 @@
         <div class="max-w-5xl mx-auto px-4 text-center">
             <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-6">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span data-i18n="hero_badge">HealthTech & Legacy AI Innovation</span>
+                <span data-i18n="hero_badge">Zero-Touch Ambient AI & Legacy Preservation</span>
             </div>
             <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
                 <span data-i18n="hero_title_1">Preserving the Legacy,</span><br>
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200" data-i18n="hero_title_2">Protecting the Present.</span>
             </h1>
-            <p class="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto mb-10 font-serif italic" data-i18n="hero_desc">"Volver a pasar por el corazón": Ecosistema de inteligencia artificial ambiental que combina wearables POV, geolocalización segura de rescate y modelos multimodales para mitigar el deterioro cognitivo.</p>
+            <p class="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto mb-10 font-serif italic" data-i18n="hero_desc">"Volver a pasar por el corazón": Ecosistema de asistencia pasiva sin fricción que combina auto-anclas grabadas en fase temprana, captura pasiva Zero-Touch y geolocalización segura de rescate.</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#mockups" class="px-8 py-4 rounded-xl bg-emerald-500 text-slate-950 font-semibold hover:bg-emerald-400 transition shadow-xl shadow-emerald-500/20 flex items-center justify-center space-x-2">
-                    <span data-i18n="hero_cta_1">Ver Mockups Interactivos</span>
+                <a href="#anchors" class="px-8 py-4 rounded-xl bg-emerald-500 text-slate-950 font-semibold hover:bg-emerald-400 transition shadow-xl shadow-emerald-500/20 flex items-center justify-center space-x-2">
+                    <span data-i18n="hero_cta_1">Ver Protocolo de Auto-Anclas</span>
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                 </a>
-                <a href="#safety" class="px-8 py-4 rounded-xl bg-slate-900 border border-slate-800 text-white font-semibold hover:bg-slate-800 transition flex items-center justify-center space-x-2">
-                    <span data-i18n="hero_cta_2">Sistema GPS & QR de Rescate</span>
+                <a href="#mockups" class="px-8 py-4 rounded-xl bg-slate-900 border border-slate-800 text-white font-semibold hover:bg-slate-800 transition flex items-center justify-center space-x-2">
+                    <span data-i18n="hero_cta_2">Explorar Mockups Interactivos</span>
                 </a>
             </div>
         </div>
@@ -98,7 +86,7 @@
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-3xl font-bold text-white mb-4" data-i18n="pillars_heading">Core Architecture</h2>
                 <p class="text-emerald-400 font-medium mb-2" data-i18n="pillars_sub">Three Pillars of Care & Preservation</p>
-                <p class="text-slate-400" data-i18n="pillars_desc">Diseñado para ofrecer fricción cero al paciente y seguridad absoluta a los familiares cuidadores.</p>
+                <p class="text-slate-400" data-i18n="pillars_desc">Diseñado bajo el principio de fricción cero para el paciente y tranquilidad absoluta para la familia.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
@@ -106,33 +94,111 @@
                     <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3" data-i18n="pillar_1_title">01. Patient POV HUD</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="pillar_1_text">Estímulos de voz diarios automatizados usando la voz real de seres queridos. Captura POV manos libres a través de gafas inteligentes.</p>
-                    <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md" data-i18n="pillar_1_tag">Fricción cognitiva cero</span>
+                    <h3 class="text-xl font-bold text-white mb-3" data-i18n="pillar_1_title">01. Passive Zero-Touch Ingestion</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="pillar_1_text">El paciente no opera ningún botón. Captura manos libres automatizada mediante wearables livianos con sincronización autónoma en base de carga.</p>
+                    <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md" data-i18n="pillar_1_tag">Cero fricción cognitiva</span>
                 </div>
 
                 <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800/80 hover:border-emerald-500/40 transition group">
                     <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3" data-i18n="pillar_2_title">02. Family Cloud & Audit</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="pillar_2_text">Subida cifrada inmediata a la nube privada con borrado local automático. Auditorías de seguridad y protección activa continua.</p>
-                    <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md" data-i18n="pillar_2_tag">Cifrado seguro AES-256</span>
+                    <h3 class="text-xl font-bold text-white mb-3" data-i18n="pillar_2_title">02. Family Cloud & Zero-Knowledge</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="pillar_2_text">Cifrado local inmediato AES-256 con borrado físico automático (Auto-Wipe). Almacenamiento seguro en la nube bajo estándares HIPAA/GDPR.</p>
+                    <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md" data-i18n="pillar_2_tag">Cifrado de extremo a extremo</span>
                 </div>
 
                 <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800/80 hover:border-emerald-500/40 transition group">
                     <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3" data-i18n="pillar_3_title">03. The Legacy Vault</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="pillar_3_text">Indexación mediante IA multimodal de recuerdos vitales, historias y consejos para preservar el patrimonio autobiográfico.</p>
-                    <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md" data-i18n="pillar_3_tag">Archivo histórico generativo</span>
+                    <h3 class="text-xl font-bold text-white mb-3" data-i18n="pillar_3_title">03. The Legacy Vault & Self-Anchors</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="pillar_3_text">Indexación con IA multimodal de recuerdos vitales e integración de auto-mensajes grabados en fases tempranas para reorientación afectiva.</p>
+                    <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md" data-i18n="pillar_3_tag">Reorientación emocional activa</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION: GPS & QR Rescue Band with Functions & User Images -->
+    <!-- NUEVA SECCIÓN: Módulo de Auto-Anclas (Self-Anchors) -->
+    <section id="anchors" class="py-24 bg-slate-950 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20" data-i18n="anchors_badge">Early-Stage Dignity Protocol</span>
+                <h2 class="text-3xl font-bold text-white mt-4 mb-4" data-i18n="anchors_heading">Protocolo de Auto-Anclas Identitarias</h2>
+                <p class="text-slate-400" data-i18n="anchors_desc">Grabación guiada en fases lúcidas para crear intervenciones de voz y vídeo que el propio paciente escucha en momentos de agitación o desorientación futura.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 relative">
+                    <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center text-sm mb-4">1</div>
+                    <h3 class="text-lg font-bold text-white mb-2" data-i18n="anchor_1_title">Adherencia a Rutinas</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="anchor_1_text">"Hola, soy yo, Manuel. Son las 9 de la mañana. Recuerda tomar la pastilla azul sobre la mesa para estar tranquilo."</p>
+                    <span class="text-xs text-slate-500 italic" data-i18n="anchor_1_trigger">Disparado por: Programador horario pasivo</span>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-900 border border-emerald-500/40 relative shadow-xl shadow-emerald-500/5">
+                    <div class="w-8 h-8 rounded-full bg-emerald-500 text-slate-950 font-bold flex items-center justify-center text-sm mb-4">2</div>
+                    <h3 class="text-lg font-bold text-white mb-2" data-i18n="anchor_2_title">Protocolo de Autocalma Nocturna</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="anchor_2_text">"No te asustes si te sientes desorientado. Estás en tu casa de la Calle Mayor. Marta está en camino y todo está bien."</p>
+                    <span class="text-xs text-emerald-400 italic" data-i18n="anchor_2_trigger">Disparado por: Sensor de movimiento nocturno de la pulsera</span>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 relative">
+                    <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center text-sm mb-4">3</div>
+                    <h3 class="text-lg font-bold text-white mb-2" data-i18n="anchor_3_title">Estimulación Cognitiva Favorita</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="anchor_3_text">"Hoy es un día estupendo para caminar por el parque. Ponte las zapatillas verdes, recuerdas cuánto te gusta ese paseo."</p>
+                    <span class="text-xs text-slate-500 italic" data-i18n="anchor_3_trigger">Disparado por: Inactividad matutina detectada</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Matriz de Adaptabilidad Clínica por Fases (GDS) -->
+    <section id="stages" class="py-24 bg-slate-900/40 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20" data-i18n="stages_badge">Clinical Ergonomics</span>
+                <h2 class="text-3xl font-bold text-white mt-4 mb-4" data-i18n="stages_heading">Adaptabilidad Tecnológica por Fase Clínica (GDS)</h2>
+                <p class="text-slate-400" data-i18n="stages_desc">Respuestas graduadas que evolucionan automáticamente con la progresión del deterioro cognitivo del paciente.</p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm text-slate-300 bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
+                    <thead class="bg-slate-950 text-slate-200 uppercase text-xs">
+                        <tr>
+                            <th class="py-4 px-6 border-b border-slate-800" data-i18n="th_stage">Fase Cognitiva</th>
+                            <th class="py-4 px-6 border-b border-slate-800" data-i18n="th_capacity">Maniobrabilidad Real</th>
+                            <th class="py-4 px-6 border-b border-slate-800" data-i18n="th_interaction">Interacción con la App / Wearable</th>
+                            <th class="py-4 px-6 border-b border-slate-800" data-i18n="th_role">Rol del Cuidador</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800">
+                        <tr class="hover:bg-slate-800/30">
+                            <td class="py-4 px-6 font-bold text-white" data-i18n="st1_title">Fase Leve (GDS 3)</td>
+                            <td class="py-4 px-6 text-emerald-400" data-i18n="st1_cap">Asistida (Botonera simple)</td>
+                            <td class="py-4 px-6" data-i18n="st1_int">Grabación guiada de Auto-Anclas y activación por voz en un toque.</td>
+                            <td class="py-4 px-6 text-slate-400" data-i18n="st1_role">Supervisión y co-configuración de rutinas.</td>
+                        </tr>
+                        <tr class="hover:bg-slate-800/30 bg-emerald-500/5">
+                            <td class="py-4 px-6 font-bold text-white" data-i18n="st2_title">Fase Moderada (GDS 4-5)</td>
+                            <td class="py-4 px-6 text-amber-400" data-i18n="st2_cap">NULA (100% Pasiva)</td>
+                            <td class="py-4 px-6" data-i18n="st2_int">Sincronización autónoma en base de carga. Cero interacción táctil requerida.</td>
+                            <td class="py-4 px-6 text-slate-400" data-i18n="st2_role">Operador único de la Gateway App y monitorización de alertas.</td>
+                        </tr>
+                        <tr class="hover:bg-slate-800/30">
+                            <td class="py-4 px-6 font-bold text-white" data-i18n="st3_title">Fase Avanzada (GDS 6-7)</td>
+                            <td class="py-4 px-6 text-rose-400" data-i18n="st3_cap">Sensorial / Híper-ligera</td>
+                            <td class="py-4 px-6" data-i18n="st3_int">Geolocalización por pulsera hipoalergénica sin botones y rescate QR pasivo.</td>
+                            <td class="py-4 px-6 text-slate-400" data-i18n="st3_role">Recuperación de historiales y supervisión de seguridad activa.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: GPS & QR Rescue Band -->
     <section id="safety" class="py-24 bg-slate-950 border-b border-slate-800/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -141,7 +207,6 @@
                 <p class="text-slate-400" data-i18n="safety_desc">Una matriz completa de funciones de seguridad pasiva y activa diseñada para la tranquilidad absoluta de la familia y la autonomía protegida del paciente.</p>
             </div>
 
-            <!-- Matriz de Funciones Avanzadas de la Pulsera -->
             <div class="grid md:grid-cols-3 gap-6 mb-16">
                 <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-emerald-500/40 transition">
                     <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4 font-bold">🌙</div>
@@ -175,7 +240,6 @@
                 </div>
             </div>
 
-            <!-- IMÁGENES DE LA PULSERA -->
             <div class="grid md:grid-cols-2 gap-8 mb-16">
                 <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800 shadow-2xl">
                     <img src="pulsera_mockup.jpg" alt="Chronosense Smart GPS Rescue Band Mockup" class="w-full rounded-xl border border-emerald-500/20 shadow-lg">
@@ -187,63 +251,28 @@
                     <p class="text-slate-400 text-sm mt-4 italic text-center">Figura 2: Matriz de funciones activas de protección y supervisión continua.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Simulación Visual del Escaneo QR / Rescate -->
-            <div class="max-w-2xl mx-auto p-8 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-emerald-500/30 shadow-2xl relative text-center">
-                <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-500 text-slate-950 text-xs font-extrabold px-4 py-1 rounded-full uppercase tracking-wider" data-i18n="rescue_badge">Modo Rescate Comunitario QR</div>
-                <h3 class="text-xl font-bold text-white mb-2 mt-2" data-i18n="rescue_title">Simulación de Interfaz al Escanear la Pulsera</h3>
-                <p class="text-slate-400 text-sm mb-6" data-i18n="rescue_desc">Esto es lo que verá cualquier transeúnte o autoridad al escanear el código QR de la pulsera en caso de pérdida:</p>
-                
-                <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-4 text-left">
-                    <div class="flex items-center space-x-3">
-                        <div class="w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-400 font-bold text-lg">👨‍🦳</div>
-                        <div>
-                            <p class="text-white font-semibold" data-i18n="rescue_patient_name">"Hola, soy Manuel García"</p>
-                            <p class="text-xs text-slate-400" data-i18n="rescue_patient_sub">Vídeo personal de identidad y orientación activa.</p>
-                        </div>
-                    </div>
-                    <div class="p-3 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs space-y-1">
-                        <p data-i18n="rescue_address">📍 <strong>Dirección de retorno segura:</strong> Calle Mayor 42, Madrid</p>
-                        <p data-i18n="rescue_phone">📞 <strong>Contacto prioritario:</strong> +34 600 000 000 (Familiares)</p>
-                    </div>
-                    <button onclick="alert('Al pulsar, se activa una llamada directa cifrada al cuidador y se transmite la geolocalización GPS exacta.')" class="w-full py-3 rounded-lg bg-emerald-500 text-slate-950 font-bold text-xs hover:bg-emerald-400 transition shadow-lg shadow-emerald-500/20" data-i18n="rescue_btn">
-                        📞 Llamar al Cuidador / Enviar Ubicación GPS
-                    </button>
+    <!-- SECTION: Visual Ecosystem Mockups -->
+    <section id="mockups" class="py-24 bg-slate-900/40 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4" data-i18n="mockups_heading">Ecosistema Visual de Chronosense</h2>
+                <p class="text-emerald-400 font-medium mb-2" data-i18n="mockups_sub">Interfaces de Usuario y Arquitectura de Producto</p>
+                <p class="text-slate-400" data-i18n="mockups_desc">Visualización de las pantallas desarrolladas para la supervisión del cuidador y la exploración del legado.</p>
+            </div>
+
+            <div class="space-y-12">
+                <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800 shadow-2xl max-w-sm mx-auto">
+                    <img src="image_2.png" alt="Chronosense Mobile App UI Screen" class="w-full rounded-xl border border-emerald-500/20 shadow-lg">
+                    <p class="text-slate-400 text-sm mt-4 italic" data-i18n="mockup_caption_1">Figura 3: Interfaz móvil del cuidador bajo la paleta de cero fatiga visual (Modo Oscuro & Esmeralda).</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION: Medical Ethics & Validation -->
-    <section id="ethics" class="py-24 bg-slate-900/40 border-b border-slate-800/60">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20" data-i18n="ethics_badge">Clinical & Ethical Standards</span>
-                <h2 class="text-3xl font-bold text-white mt-4 mb-4" data-i18n="ethics_heading">Validación Ética, Médica y Privacidad</h2>
-                <p class="text-slate-400" data-i18n="ethics_desc">Compromiso absoluto con la dignidad del paciente, el rigor geriátrico y el cumplimiento estricto de las normativas internacionales de protección de datos.</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
-                    <div class="text-emerald-400 text-2xl mb-4">🛡️</div>
-                    <h3 class="text-lg font-bold text-white mb-2" data-i18n="ethics_card_1_title">Privacidad GDPR y HIPAA</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed" data-i18n="ethics_card_1_text">Cifrado de extremo a extremo AES-256. Ningún dato de geolocalización o biométrico se almacena sin el consentimiento explícito de tutores legales.</p>
-                </div>
-                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
-                    <div class="text-emerald-400 text-2xl mb-4">🩺</div>
-                    <h3 class="text-lg font-bold text-white mb-2" data-i18n="ethics_card_2_title">Alineación Geriátrica</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed" data-i18n="ethics_card_2_text">Diseñado bajo supervisión neurocognitiva para minimizar falsas alarmas y ofrecer máxima discreción y comodidad al portador.</p>
-                </div>
-                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
-                    <div class="text-emerald-400 text-2xl mb-4">✍️</div>
-                    <h3 class="text-lg font-bold text-white mb-2" data-i18n="ethics_card_3_title">Consentimiento Anticipado</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed" data-i18n="ethics_card_3_text">Protocolos para registrar las preferencias de asistencia y de vídeo en fases tempranas, protegiendo siempre la autonomía y dignidad.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION: Privacy & Security Whitepaper -->
+    <!-- SECTION: Whitepaper -->
     <section id="whitepaper" class="py-24 bg-slate-950 border-b border-slate-800/60">
         <div class="max-w-4xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -284,25 +313,7 @@
         </div>
     </section>
 
-    <!-- SECTION: Visual Ecosystem Mockups (INCLUYENDO LA NUEVA IMAGEN DE LA APP) -->
-    <section id="mockups" class="py-24 bg-slate-950">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-white mb-4" data-i18n="mockups_heading">Ecosistema Visual de Chronosense</h2>
-                <p class="text-emerald-400 font-medium mb-2" data-i18n="mockups_sub">Interfaces de Usuario y Arquitectura de Producto</p>
-                <p class="text-slate-400" data-i18n="mockups_desc">Visualización de las pantallas desarrolladas para pacientes, supervisión familiar y exploración del legado.</p>
-            </div>
-
-            <div class="space-y-12">
-                <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800 shadow-2xl max-w-sm mx-auto">
-                    <img src="image_2.png" alt="Chronosense Mobile App UI Screen" class="w-full rounded-xl border border-emerald-500/20 shadow-lg">
-                    <p class="text-slate-400 text-sm mt-4 italic" data-i18n="mockup_caption_1">Figura 3: Interfaz móvil del cuidador bajo la paleta de cero fatiga visual (Modo Oscuro & Esmeralda).</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Partners / Research Section (Conectado a mailto) -->
+    <!-- Partners / Research Section -->
     <section id="partners" class="py-24 bg-slate-900/40 border-t border-slate-800/60">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20" data-i18n="partners_badge">Strategic Partnerships</span>
@@ -323,7 +334,7 @@
                     </div>
                     <div>
                         <label class="block text-xs font-semibold text-slate-300 uppercase mb-1" data-i18n="form_label_msg">Mensaje o Interés de Validación</label>
-                        <textarea id="contact-msg" rows="3" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500 transition text-sm" placeholder="Interesado en la arquitectura de audio POV y seguridad en la nube..."></textarea>
+                        <textarea id="contact-msg" rows="3" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500 transition text-sm" placeholder="Interesado en la arquitectura pasiva Zero-Touch y el protocolo de Auto-Anclas..."></textarea>
                     </div>
                     <button type="submit" class="w-full py-3 rounded-lg bg-emerald-500 text-slate-950 font-bold hover:bg-emerald-400 transition shadow-lg shadow-emerald-500/20 text-sm" data-i18n="form_submit">
                         Solicitar Dossier Ejecutivo
@@ -344,126 +355,114 @@
         </div>
     </footer>
 
-    <!-- Multilanguage Translation Script & Mailto Handler -->
+    <!-- Multilanguage Translation Script -->
     <script>
         const translations = {
             es: {
-                nav_pillars: "Pilares", nav_mockups: "Mockups", nav_safety: "Pulsera GPS & QR", nav_ethics: "Ética Médica", nav_whitepaper: "Whitepaper", nav_partners: "Partners", btn_brief: "Executive Brief",
-                hero_badge: "HealthTech & Legacy AI Innovation", hero_title_1: "Preserving the Legacy,", hero_title_2: "Protecting the Present.",
-                hero_desc: "\"Volver a pasar por el corazón\": Ecosistema de inteligencia artificial ambiental que combina wearables POV, geolocalización segura de rescate y modelos multimodales para mitigar el deterioro cognitivo.",
-                hero_cta_1: "Ver Mockups Interactivos", hero_cta_2: "Sistema GPS & QR de Rescate",
-                pillars_heading: "Arquitectura Central", pillars_sub: "Tres Pilares de Cuidado y Preservación", pillars_desc: "Diseñado para ofrecer fricción cero al paciente y seguridad absoluta a los familiares cuidadores.",
-                pillar_1_title: "01. Patient POV HUD", pillar_1_text: "Estímulos de voz diarios automatizados usando la voz real de seres queridos. Captura POV manos libres a través de gafas inteligentes.", pillar_1_tag: "Fricción cognitiva cero",
-                pillar_2_title: "02. Family Cloud & Audit", pillar_2_text: "Subida cifrada inmediata a la nube privada con borrado local automático. Auditorías de seguridad y protección activa continua.", pillar_2_tag: "Cifrado seguro AES-256",
-                pillar_3_title: "03. The Legacy Vault", pillar_3_text: "Indexación mediante IA multimodal de recuerdos vitales, historias y consejos para preservar el patrimonio autobiográfico.", pillar_3_tag: "Archivo histórico generativo",
-                safety_badge: "Protección Activa y Rescate", safety_heading: "Pulsera GPS Inteligente con QR de Emergencia",
-                safety_desc: "Una matriz completa de funciones de seguridad pasiva y activa diseñada para la tranquilidad absoluta de la familia y la autonomía protegida del paciente.",
+                nav_pillars: "Pilares", nav_anchors: "Auto-Anclas", nav_stages: "Matriz Clínica", nav_mockups: "Mockups", nav_safety: "Pulsera GPS & QR", nav_whitepaper: "Whitepaper", btn_brief: "Executive Brief",
+                hero_badge: "Zero-Touch Ambient AI & Legacy Preservation", hero_title_1: "Preserving the Legacy,", hero_title_2: "Protecting the Present.",
+                hero_desc: "\"Volver a pasar por el corazón\": Ecosistema de asistencia pasiva sin fricción que combina auto-anclas grabadas en fase temprana, captura pasiva Zero-Touch y geolocalización segura de rescate.",
+                hero_cta_1: "Ver Protocolo de Auto-Anclas", hero_cta_2: "Explorar Mockups Interactivos",
+                pillars_heading: "Arquitectura Central", pillars_sub: "Tres Pilares de Cuidado y Preservación", pillars_desc: "Diseñado bajo el principio de fricción cero para el paciente y tranquilidad absoluta para la familia.",
+                pillar_1_title: "01. Passive Zero-Touch Ingestion", pillar_1_text: "El paciente no opera ningún botón. Captura manos libres automatizada mediante wearables livianos con sincronización autónoma en base de carga.", pillar_1_tag: "Cero fricción cognitiva",
+                pillar_2_title: "02. Family Cloud & Zero-Knowledge", pillar_2_text: "Cifrado local inmediato AES-256 con borrado físico automático (Auto-Wipe). Almacenamiento seguro en la nube bajo estándares HIPAA/GDPR.", pillar_2_tag: "Cifrado de extremo a extremo",
+                pillar_3_title: "03. The Legacy Vault & Self-Anchors", pillar_3_text: "Indexación con IA multimodal de recuerdos vitales e integración de auto-mensajes grabados en fases tempranas para reorientación afectiva.", pillar_3_tag: "Reorientación emocional activa",
+                anchors_badge: "Protocolo de Dignidad Temprana", anchors_heading: "Protocolo de Auto-Anclas Identitarias", anchors_desc: "Grabación guiada en fases lúcidas para crear intervenciones de voz y vídeo que el propio paciente escucha en momentos de agitación o desorientación futura.",
+                anchor_1_title: "Adherencia a Rutinas", anchor_1_text: "\"Hola, soy yo, Manuel. Son las 9 de la mañana. Recuerda tomar la pastilla azul sobre la mesa para estar tranquilo.\"", anchor_1_trigger: "Disparado por: Programador horario pasivo",
+                anchor_2_title: "Protocolo de Autocalma Nocturna", anchor_2_text: "\"No te asustes si te sientes desorientado. Estás en tu casa de la Calle Mayor. Marta está en camino y todo está bien.\"", anchor_2_trigger: "Disparado por: Sensor de movimiento nocturno de la pulsera",
+                anchor_3_title: "Estimulación Cognitiva Favorita", anchor_3_text: "\"Hoy es un día estupendo para caminar por el parque. Ponte las zapatillas verdes, recuerdas cuánto te gusta ese paseo.\"", anchor_3_trigger: "Disparado por: Inactividad matutina detectada",
+                stages_badge: "Ergonomía Clínica", stages_heading: "Adaptabilidad Tecnológica por Fase Clínica (GDS)", stages_desc: "Respuestas graduadas que evolucionan automáticamente con la progresión del deterioro cognitivo del paciente.",
+                th_stage: "Fase Cognitiva", th_capacity: "Maniobrabilidad Real", th_interaction: "Interacción con la App / Wearable", th_role: "Rol del Cuidador",
+                st1_title: "Fase Leve (GDS 3)", st1_cap: "Asistida (Botonera simple)", st1_int: "Grabación guiada de Auto-Anclas y activación por voz en un toque.", st1_role: "Supervisión y co-configuración de rutinas.",
+                st2_title: "Fase Moderada (GDS 4-5)", st2_cap: "NULA (100% Pasiva)", st2_int: "Sincronización autónoma en base de carga. Cero interacción táctil requerida.", st2_role: "Operador único de la Gateway App y monitorización de alertas.",
+                st3_title: "Fase Avanzada (GDS 6-7)", st3_cap: "Sensorial / Híper-ligera", st3_int: "Geolocalización por pulsera hipoalergénica sin botones y rescate QR pasivo.", st3_role: "Recuperación de historiales y supervisión de seguridad activa.",
+                safety_badge: "Protección Activa y Rescate", safety_heading: "Pulsera GPS Inteligente con QR de Emergencia", safety_desc: "Una matriz completa de funciones de seguridad pasiva y activa diseñada para la tranquilidad absoluta de la familia y la autonomía protegida del paciente.",
                 func_1_title: "Aviso de Salida Nocturna", func_1_desc: "Detectar de forma inmediata desplazamientos fuera del horario habitual de descanso para prevenir riesgos en la calle.",
                 func_2_title: "Batería Inteligente", func_2_desc: "Aviso automatizado anticipado al cuidador cuando la pulsera necesita cargarse, garantizando autonomía continua.",
                 func_3_title: "Detección de Inmovilidad", func_3_desc: "Alertar de inmediato ante periodos inusuales de inactividad o posibles caídas dentro o fuera del hogar.",
                 func_4_title: "Modo Emergencia SOS", func_4_desc: "Capacidad de avisar simultáneamente a varios familiares y contactos de confianza con un solo toque o comando.",
                 func_5_title: "Historial de Recorridos", func_5_desc: "Consultar desplazamientos anteriores y patrones de ruta habituales para una mejor supervisión médica.",
                 func_6_title: "Detección de Retirada", func_6_desc: "Alerta instantánea al cuidador si la persona se quita la pulsera de la muñeca de forma voluntaria o accidental.",
-                rescue_badge: "Modo Rescate Comunitario QR", rescue_title: "Simulación de Interfaz al Escanear la Pulsera", rescue_desc: "Esto es lo que verá cualquier transeúnte o autoridad al escanear el código QR de la pulsera en caso de pérdida:",
-                rescue_patient_name: "\"Hola, soy Manuel García\"", rescue_patient_sub: "Vídeo personal de identidad y orientación activa.",
-                rescue_address: "📍 <strong>Dirección de retorno segura:</strong> Calle Mayor 42, Madrid",
-                rescue_phone: "📞 <strong>Contacto prioritario:</strong> +34 600 000 000 (Familiares)",
-                rescue_btn: "📞 Llamar al Cuidador / Enviar Ubicación GPS",
-                ethics_badge: "Estándares Clínicos y Éticos", ethics_heading: "Validación Ética, Médica y Privacidad",
-                ethics_desc: "Compromiso absoluto con la dignidad del paciente, el rigor geriátrico y el cumplimiento estricto de las normativas internacionales de protección de datos.",
-                ethics_card_1_title: "Privacidad GDPR y HIPAA", ethics_card_1_text: "Cifrado de extremo a extremo AES-256. Ningún dato de geolocalización o biométrico se almacena sin el consentimiento explícito de tutores legales.",
-                ethics_card_2_title: "Alineación Geriátrica", ethics_card_2_text: "Diseñado bajo supervisión neurocognitiva para minimizar falsas alarmas y ofrecer máxima discreción y comodidad al portador.",
-                ethics_card_3_title: "Consentimiento Anticipado", ethics_card_3_text: "Protocolos para registrar las preferencias de asistencia y de vídeo en fases tempranas, protegiendo siempre la autonomía y dignidad.",
+                mockups_heading: "Ecosistema Visual de Chronosense", mockups_sub: "Interfaces de Usuario y Arquitectura de Producto", mockups_desc: "Visualización de las pantallas desarrolladas para la supervisión del cuidador y la exploración del legado.",
+                mockup_caption_1: "Figura 3: Interfaz móvil del cuidador bajo la paleta de cero fatiga visual (Modo Oscuro & Esmeralda).",
                 wp_badge: "Cumplimiento Técnico y Seguridad", wp_heading: "Whitepaper de Privacidad y Cifrado E2EE", wp_desc: "Arquitectura de Conocimiento Cero (Zero-Knowledge) diseñada para cumplir con los más altos estándares regulatorios médicos (HIPAA / GDPR).",
                 wp_point_1_title: "1. Cifrado en Tres Capas (Zero-Knowledge)", wp_point_1_text: "Los flujos de vídeo POV y datos biométricos se cifran localmente en el dispositivo mediante AES-256 antes de transmitirse. Se transportan vía TLS 1.3 y se almacenan en clústeres aislados europeos bajo claves controladas por el usuario (CMEK).",
                 wp_point_2_title: "2. Rescate QR con Tokens Efímeros", wp_point_2_text: "El código QR de la pulsera contiene un UUID aleatorio que no expone datos personales. Al escanearse, genera una sesión efímera que muestra exclusivamente el vídeo de identidad y un canal seguro de contacto.",
                 wp_point_3_title: "3. Cumplimiento Normativo Estricto", wp_point_3_text: "Preparado para la firma de acuerdos BAA (HIPAA) y cumplimiento nativo del GDPR europeo (incluyendo el derecho al olvido automatizado y aislamiento total de modelos de IA).",
                 wp_download_btn: "Descargar Whitepaper Completo (Markdown)",
-                mockups_heading: "Ecosistema Visual de Chronosense", mockups_sub: "Interfaces de Usuario y Arquitectura de Producto",
-                mockups_desc: "Visualización de las pantallas desarrolladas para pacientes, supervisión familiar y exploración del legado.",
-                mockup_caption_1: "Figura 3: Interfaz móvil del cuidador bajo la paleta de cero fatiga visual (Modo Oscuro & Esmeralda).",
-                partners_badge: "Alianzas Estratégicas", partners_heading: "Conecta con Chronosense",
-                partners_desc: "¿Eres investigador en IA, líder de producto en HealthTech o inversor interesado en soluciones de asistencia cognitiva? Estamos abriendo vías de validación y colaboración tecnológica de alto nivel.",
+                partners_badge: "Alianzas Estratégicas", partners_heading: "Conecta con Chronosense", partners_desc: "¿Eres investigador en IA, líder de producto en HealthTech o inversor interesado en soluciones de asistencia cognitiva? Estamos abriendo vías de validación y colaboración tecnológica de alto nivel.",
                 form_label_name: "Nombre completo o Institución", form_label_email: "Correo de contacto profesional", form_label_msg: "Mensaje o Interés de Validación", form_submit: "Solicitar Dossier Ejecutivo",
                 footer_copy: "© 2026 Chronosense Project. All rights reserved. Confidential Executive Concept."
             },
             en: {
-                nav_pillars: "Core Pillars", nav_mockups: "Visual Mockups", nav_safety: "GPS & QR Band", nav_ethics: "Medical Ethics", nav_whitepaper: "Whitepaper", nav_partners: "Partners", btn_brief: "Executive Brief",
-                hero_badge: "HealthTech & Legacy AI Innovation", hero_title_1: "Preserving the Legacy,", hero_title_2: "Protecting the Present.",
-                hero_desc: "An ambient AI ecosystem combining POV smart wearables, secure rescue geolocation, and multimodal models to mitigate cognitive decline.",
-                hero_cta_1: "Explore Visual Mockups", hero_cta_2: "GPS & QR Rescue System",
-                pillars_heading: "Core Architecture", pillars_sub: "Three Pillars of Care & Preservation", pillars_desc: "Engineered for zero friction on the patient side and absolute security for family members.",
-                pillar_1_title: "01. Patient POV HUD", pillar_1_text: "Automated daily voice prompts using the real voice of loved ones. Hands-free POV capture via smart glasses.", pillar_1_tag: "Zero cognitive friction design",
-                pillar_2_title: "02. Family Cloud & Audit", pillar_2_text: "Immediate encrypted upload to private cloud storage with local auto-wipe. Continuous safety audits.", pillar_2_tag: "AES-256 secure encrypted vault",
-                pillar_3_title: "03. The Legacy Vault", pillar_3_text: "Multimodal AI indexing of lifetime memories, personal stories, and advice to preserve autobiographical heritage.", pillar_3_tag: "Generative archival storytelling",
-                safety_badge: "Active Protection & Rescue", safety_heading: "Smart GPS Rescue Band with Emergency QR",
-                safety_desc: "A comprehensive matrix of passive and active safety features designed for absolute family peace of mind and protected patient autonomy.",
+                nav_pillars: "Pillars", nav_anchors: "Self-Anchors", nav_stages: "Clinical Matrix", nav_mockups: "Mockups", nav_safety: "GPS & QR Band", nav_whitepaper: "Whitepaper", btn_brief: "Executive Brief",
+                hero_badge: "Zero-Touch Ambient AI & Legacy Preservation", hero_title_1: "Preserving the Legacy,", hero_title_2: "Protecting the Present.",
+                hero_desc: "A friction-free passive assistance ecosystem combining early-stage self-anchors, Zero-Touch capture, and secure rescue geolocation.",
+                hero_cta_1: "View Self-Anchors Protocol", hero_cta_2: "Explore Visual Mockups",
+                pillars_heading: "Core Architecture", pillars_sub: "Three Pillars of Care & Preservation", pillars_desc: "Engineered under zero cognitive friction for patients and complete peace of mind for families.",
+                pillar_1_title: "01. Passive Zero-Touch Ingestion", pillar_1_text: "No patient interaction required. Automated hands-free capture via lightweight wearables with docking auto-sync.", pillar_1_tag: "Zero cognitive friction",
+                pillar_2_title: "02. Family Cloud & Zero-Knowledge", pillar_2_text: "Immediate on-device AES-256 encryption with local Auto-Wipe. Secure storage compliant with HIPAA and GDPR.", pillar_2_tag: "End-to-end encrypted",
+                pillar_3_title: "03. The Legacy Vault & Self-Anchors", pillar_3_text: "Multimodal AI indexing of memories combined with pre-recorded self-prompts for active emotional reorientation.", pillar_3_tag: "Active affective grounding",
+                anchors_badge: "Early-Stage Dignity Protocol", anchors_heading: "Identity Self-Anchors Protocol", anchors_desc: "Guided recordings captured during early stages to trigger calming video and voice prompts during future confusion episodes.",
+                anchor_1_title: "Routine Adherence", anchor_1_text: "\"Hello, it's me, Manuel. It's 9 AM. Remember to take the blue pill on the table to stay well.\"", anchor_1_trigger: "Triggered by: Passive routine scheduler",
+                anchor_2_title: "Nighttime Self-Calm", anchor_2_text: "\"Don't be afraid if you feel disoriented. You are safe at home on Mayor Street. Marta is on her way.\"", anchor_2_trigger: "Triggered by: Night motion sensor",
+                anchor_3_title: "Cognitive Activation", anchor_3_text: "\"Today is a great day for a walk in the park. Put on your green shoes, you know how much you enjoy it.\"", anchor_3_trigger: "Triggered by: Morning immobility alert",
+                stages_badge: "Clinical Ergonomics", stages_heading: "Technological Adaptability by Clinical Stage (GDS)", stages_desc: "Graduated responses that evolve automatically with cognitive decline progression.",
+                th_stage: "Cognitive Stage", th_capacity: "Real Manoeuvrability", th_interaction: "App / Wearable Interaction", th_role: "Caregiver Role",
+                st1_title: "Mild Stage (GDS 3)", st1_cap: "Assisted (Single button)", st1_int: "Guided Self-Anchor recording and one-tap voice prompts.", st1_role: "Routine co-configuration and support.",
+                st2_title: "Moderate Stage (GDS 4-5)", st2_cap: "NONE (100% Passive)", st2_int: "Autonomous docking sync. Zero touch interaction required.", st2_role: "Primary Gateway App operator and alert monitor.",
+                st3_title: "Advanced Stage (GDS 6-7)", st3_cap: "Sensory / Ultra-light", st3_int: "Buttonless hypoallergenic GPS bracelet and passive QR rescue.", st3_role: "Safety audit and historical tracking supervision.",
+                safety_badge: "Active Protection & Rescue", safety_heading: "Smart GPS Rescue Band with Emergency QR", safety_desc: "A comprehensive matrix of passive and active safety features designed for absolute family peace of mind.",
                 func_1_title: "Night Wandering Alert", func_1_desc: "Immediately detect movements outside normal sleeping hours to prevent outdoor safety risks.",
                 func_2_title: "Smart Battery", func_2_desc: "Early automated notification when the band needs charging to ensure continuous operational uptime.",
                 func_3_title: "Immobility Detection", func_3_desc: "Alert instantly against unusual periods of inactivity or potential falls indoors and outdoors.",
                 func_4_title: "SOS Emergency Mode", func_4_desc: "Simultaneously alert multiple family members and trusted contacts with a single tap or voice command.",
                 func_5_title: "Route History", func_5_desc: "Review past movements and routine travel patterns for better clinical and medical supervision.",
                 func_6_title: "Removal Detection", func_6_desc: "Instant caregiver alert if the person voluntarily or accidentally removes the band from their wrist.",
-                rescue_badge: "QR Community Rescue Mode", rescue_title: "Band Scan Interface Simulation", rescue_desc: "This is what any passerby or authority will see when scanning the rescue band QR code in case of loss:",
-                rescue_patient_name: "\"Hello, I am Manuel García\"", rescue_patient_sub: "Personal identity video and active orientation support.",
-                rescue_address: "📍 <strong>Safe Return Address:</strong> 42 Mayor Street, Madrid",
-                rescue_phone: "📞 <strong>Primary Contact:</strong> +34 600 000 000 (Family Members)",
-                rescue_btn: "📞 Call Caregiver / Send GPS Location",
-                ethics_badge: "Clinical & Ethical Standards", ethics_heading: "Ethical, Medical & Privacy Validation",
-                ethics_desc: "Absolute commitment to patient dignity, geriatric rigor, and strict compliance with international health data protection regulations.",
-                ethics_card_1_title: "GDPR & HIPAA Privacy", ethics_card_1_text: "End-to-end AES-256 encryption. No geolocation or biometric data is stored without explicit consent from authorized legal guardians.",
-                ethics_card_2_title: "Geriatric Alignment", ethics_card_2_text: "Designed under neurocognitive supervision to minimize false alarms and offer maximum discretion and comfort to the wearer.",
-                ethics_card_3_title: "Advanced Consent", ethics_card_3_text: "Protocols allowing users to record legacy wishes and assistance preferences in early stages, always protecting autonomy and dignity.",
-                wp_badge: "Technical Compliance & Security", wp_heading: "Privacy & E2EE Encryption Whitepaper", wp_desc: "Zero-Knowledge architecture engineered to comply with the highest medical regulatory standards (HIPAA / GDPR).",
-                wp_point_1_title: "1. Three-Layer Zero-Knowledge Encryption", wp_point_1_text: "POV video streams and biometric data are encrypted locally on-device via AES-256 before transmission. Transported via TLS 1.3 and stored in isolated European clusters under user-controlled keys (CMEK).",
-                wp_point_2_title: "2. QR Rescue with Ephemeral Tokens", wp_point_2_text: "The band's QR code contains a random UUID exposing no personal data. When scanned, it generates an ephemeral session displaying solely the identity video and secure contact.",
-                wp_point_3_title: "3. Strict Regulatory Compliance", wp_point_3_text: "Ready for BAA agreements (HIPAA) and native European GDPR compliance (including automated right to be forgotten and total AI model isolation).",
-                wp_download_btn: "Download Full Whitepaper (Markdown)",
-                mockups_heading: "Chronosense Visual Ecosystem", mockups_sub: "User Interfaces & Product Architecture",
-                mockups_desc: "Visual walkthrough of the interfaces developed for patients, family supervision, and legacy exploration.",
+                mockups_heading: "Chronosense Visual Ecosystem", mockups_sub: "User Interfaces & Product Architecture", mockups_desc: "Visual walkthrough of the interfaces developed for caregiver supervision and legacy exploration.",
                 mockup_caption_1: "Figure 3: Caregiver mobile UI under the zero-visual-fatigue palette (Dark Mode & Emerald).",
-                partners_badge: "Strategic Partnerships", partners_heading: "Connect with Chronosense",
-                partners_desc: "Are you an AI researcher, a HealthTech product lead, or an investor? We are opening discussions for early validation.",
+                wp_badge: "Technical Compliance & Security", wp_heading: "Privacy & E2EE Encryption Whitepaper", wp_desc: "Zero-Knowledge architecture engineered to comply with HIPAA and GDPR standards.",
+                wp_point_1_title: "1. Three-Layer Zero-Knowledge Encryption", wp_point_1_text: "POV video streams and biometric data are encrypted locally on-device via AES-256 before transmission. Transported via TLS 1.3.",
+                wp_point_2_title: "2. QR Rescue with Ephemeral Tokens", wp_point_2_text: "The band's QR code contains a random UUID. Scanning generates an ephemeral session displaying identity video and secure contact.",
+                wp_point_3_title: "3. Strict Regulatory Compliance", wp_point_3_text: "Ready for BAA agreements (HIPAA) and native European GDPR compliance.",
+                wp_download_btn: "Download Full Whitepaper (Markdown)",
+                partners_badge: "Strategic Partnerships", partners_heading: "Connect with Chronosense", partners_desc: "Are you an AI researcher, HealthTech product lead, or investor? We are opening discussions for early validation.",
                 form_label_name: "Full Name or Institution", form_label_email: "Professional Contact Email", form_label_msg: "Message or Validation Interest", form_submit: "Request Executive Brief",
                 footer_copy: "© 2026 Chronosense Project. All rights reserved. Confidential Executive Concept."
             },
             de: {
-                nav_pillars: "Kernpfeiler", nav_mockups: "Mockups", nav_safety: "GPS & QR Armband", nav_ethics: "Medizinische Ethik", nav_whitepaper: "Whitepaper", nav_partners: "Partner", btn_brief: "Executive Brief",
-                hero_badge: "HealthTech & Legacy KI-Innovation", hero_title_1: "Das Erbe bewahren,", hero_title_2: "die Gegenwart schützen.",
-                hero_desc: "Ein ambientales KI-Ökosystem, das POV-Wearables, sichere Rettungs-Geolokalisierung und multimodale Modelle kombiniert, um den kognitiven Abbau zu mindern.",
-                hero_cta_1: "Visuelle Mockups Erkunden", hero_cta_2: "GPS & QR Rettungssystem",
-                pillars_heading: "Kernarchitektur", pillars_sub: "Drei Säulen der Pflege & Bewahrung", pillars_desc: "Entwickelt für null Reibung auf Patientenseite und absolute Sicherheit für pflegende Angehörige.",
-                pillar_1_title: "01. Patient POV HUD", pillar_1_text: "Automatisierte tägliche Sprachaufforderungen in echter Stimme. Freihändige POV-Aufnahme über intelligente Brillen.", pillar_1_tag: "Null kognitive Reibung",
-                pillar_2_title: "02. Family Cloud & Audit", pillar_2_text: "Sofortiger verschlüsselter Upload in die private Cloud mit automatischer lokaler Löschung. Sicherheitsaudits.", pillar_2_tag: "AES-256 sicherer Tresor",
-                pillar_3_title: "03. The Legacy Vault", pillar_3_text: "Multimodale KI-Indizierung von Lebenserinnerungen zur Bewahrung des autobiografischen Erbes.", pillar_3_tag: "Generatives Archiv-Storytelling",
-                safety_badge: "Aktiver Schutz & Rettung", safety_heading: "Intelligentes GPS-Rettungsarmband mit Notfall-QR",
-                safety_desc: "Eine umfassende Matrix passiver und aktiver Sicherheitsfunktionen für absolute Seelenruhe der Familie und geschützte Autonomie.",
-                func_1_title: "Nächtlicher Weglauf-Alarm", func_1_desc: "Sofortiges Erkennen von Bewegungen außerhalb der normalen Schlafenszeit zur Vermeidung von Sicherheitsrisiken.",
-                func_2_title: "Intelligente Batterie", func_2_desc: "Frühzeitige automatisierte Benachrichtigung, wenn das Armband aufgeladen werden muss.",
+                nav_pillars: "Säulen", nav_anchors: "Self-Anchors", nav_stages: "Klinische Matrix", nav_mockups: "Mockups", nav_safety: "GPS & QR Armband", nav_whitepaper: "Whitepaper", btn_brief: "Executive Brief",
+                hero_badge: "Zero-Touch Ambient AI & Legacy Preservation", hero_title_1: "Das Erbe bewahren,", hero_title_2: "die Gegenwart schützen.",
+                hero_desc: "Ein reibungsfreies ambientales Assistenzsystem, das frühzeitig aufgenommene Selbst-Anker mit Zero-Touch-Erfassung kombiniert.",
+                hero_cta_1: "Selbst-Anker-Protokoll Anzeigen", hero_cta_2: "Visuelle Mockups Erkunden",
+                pillars_heading: "Kernarchitektur", pillars_sub: "Drei Säulen der Pflege & Bewahrung", pillars_desc: "Entwickelt für null kognitive Reibung auf Patientenseite und absolute Sicherheit für Angehörige.",
+                pillar_1_title: "01. Passive Zero-Touch Ingestion", pillar_1_text: "Keine Interaktion durch den Patienten. Automatische Freihand-Erfassung über leichte Wearables mit Docking-Synchronisierung.", pillar_1_tag: "Null kognitive Reibung",
+                pillar_2_title: "02. Family Cloud & Zero-Knowledge", pillar_2_text: "Sofortige AES-256-Verschlüsselung auf dem Gerät mit Auto-Wipe. Sichere Speicherung nach HIPAA/DSGVO.", pillar_2_tag: "Ende-zu-Ende verschlüsselt",
+                pillar_3_title: "03. The Legacy Vault & Self-Anchors", pillar_3_text: "Multimodale KI-Indizierung kombiniert mit selbst aufgenommenen Sprachhinweisen zur emotionalen Reorientierung.", pillar_3_tag: "Aktive Orientierungshilfe",
+                anchors_badge: "Frühstadium-Würde-Protokoll", anchors_heading: "Identitäts-Selbst-Anker-Protokoll", anchors_desc: "Geführte Aufnahmen in klaren Phasen zur späteren automatischen Beruhigung bei Verwirrtheitszuständen.",
+                anchor_1_title: "Routinen-Einhaltung", anchor_1_text: "\"Hallo, ich bin's, Manuel. Es ist 9 Uhr morgens. Denk an die blaue Tablette auf dem Tisch.\"", anchor_1_trigger: "Ausgelöst durch: Passiven Zeitplaner",
+                anchor_2_title: "Nächtliche Selbstberuhigung", anchor_2_text: "\"Hab keine Angst. Du bist zu Hause in der Mayor-Straße. Marta ist auf dem Weg.\"", anchor_2_trigger: "Ausgelöst durch: Nacht-Bewegungssensor",
+                anchor_3_title: "Kognitive Aktivierung", anchor_3_text: "\"Heute ist ein schöner Tag für einen Spaziergang. Zieh deine grünen Schuhe an.\"", anchor_3_trigger: "Ausgelöst durch: Inaktivitätswarnung",
+                stages_badge: "Klinische Ergonomie", stages_heading: "Technologische Anpassungsfähigkeit nach GDS-Stufen", stages_desc: "Automatisch mit dem Fortschreiten der Demenz mitwachsende Assistenzfunktionen.",
+                th_stage: "Kognitive Stufe", th_capacity: "Reale Handlungsfähigkeit", th_interaction: "App- / Wearable-Interaktion", th_role: "Rolle des Pflegenden",
+                st1_title: "Leichte Stufe (GDS 3)", st1_cap: "Unterstützt (1-Knopf)", st1_int: "Geführte Aufnahme von Selbst-Ankern und 1-Klick-Sprachauslöser.", st1_role: "Unterstützung bei der Routinen-Einrichtung.",
+                st2_title: "Mittlere Stufe (GDS 4-5)", st2_cap: "NULL (100% Passiv)", st2_int: "Autonome Docking-Synchronisation. Keine Berührung erforderlich.", st2_role: "Alleiniger Bediener der Gateway App.",
+                st3_title: "Fortgeschritten (GDS 6-7)", st3_cap: "Sensorisch / Ultra-leicht", st3_int: "Knopfloses GPS-Armband und passives QR-Rettungssystem.", st3_role: "Sicherheitsüberwachung und Daten-Audits.",
+                safety_badge: "Aktiver Schutz & Rettung", safety_heading: "Intelligentes GPS-Rettungsarmband mit Notfall-QR", safety_desc: "Umfassende Passiv- und Aktiv-Sicherheitsmatrix für absolute Beruhigung der Familie.",
+                func_1_title: "Nächtlicher Weglauf-Alarm", func_1_desc: "Sofortiges Erkennen von Bewegungen außerhalb der normalen Schlafenszeit zur Vermeidung von Risiken.",
+                func_2_title: "Intelligente Batterie", func_2_desc: "Frühzeitige automatisierte Benachrichtigung, wenn das Armband geladen werden muss.",
                 func_3_title: "Inaktivitätserkennung", func_3_desc: "Sofortige Warnung bei ungewöhnlichen Inaktivitätsphasen oder potenziellen Stürzen.",
-                func_4_title: "SOS-Notfallmodus", func_4_desc: "Gleichzeitige Benachrichtigung mehrerer Familienmitglieder und vertrauenswürdiger Kontakte.",
-                func_5_title: "Wegverlauf-Historie", func_5_desc: "Einblick in vergangene Bewegungen und Routenmuster für eine bessere medizinische Überwachung.",
-                func_6_title: "Abnahme-Erkennung", func_6_desc: "Sofortiger Alarm an den Pfleger, falls die Person das Armband freiwillig oder versehentlich abnimmt.",
-                rescue_badge: "QR-Community-Rettungsmodus", rescue_title: "Armband-Scan-Schnittstellen-Simulation", rescue_desc: "Dies sieht jeder Passant beim Scannen des Rettungsarmband-QR-Codes im Verlustfall:",
-                rescue_patient_name: "\"Hallo, ich bin Manuel García\"", rescue_patient_sub: "Persönliches Identitätsvideo und aktive Orientierungshilfe.",
-                rescue_address: "📍 <strong>Sichere Rückkehradresse:</strong> Mayor-Straße 42, Madrid",
-                rescue_phone: "📞 <strong>Hauptkontakt:</strong> +34 600 000 000 (Angehörige)",
-                rescue_btn: "📞 Pfleger Anrufen / GPS-Standort Senden",
-                ethics_badge: "Klinische & Ethische Standards", ethics_heading: "Ethische, Medizinische & Datenschutz-Validierung",
-                ethics_desc: "Absolutes Bekenntnis zu Patientendürfte, geriatrischer Strenge und strenger Einhaltung internationaler Gesundheitsdatenschutzvorschriften.",
-                ethics_card_1_title: "DSGVO & HIPAA Datenschutz", ethics_card_1_text: "Ende-zu-Ende-AES-256-Verschlüsselung. Keine Geolokalisierungs- oder Biometriedaten werden ohne Zustimmung gespeichert.",
-                ethics_card_2_title: "Geriatrische Ausrichtung", ethics_card_2_text: "Entwickelt unter neurokognitiver Aufsicht zur Minimierung von Fehlalarmen und für maximalen Komfort.",
-                ethics_card_3_title: "Erweiterte Einwilligung", ethics_card_3_text: "Protokolle zur Aufzeichnung von Vermächtniswünschen in frühen Stadien zum Schutz der künftigen Autonomie.",
-                wp_badge: "Technische Konformität & Sicherheit", wp_heading: "Datenschutz- und E2EE-Verschlüsselungs-Whitepaper", wp_desc: "Zero-Knowledge-Architektur zur Einhaltung höchster medizinischer Regulierungsstandards (HIPAA / DSGVO).",
-                wp_point_1_title: "1. Dreistufige Zero-Knowledge-Verschlüsselung", wp_point_1_text: "POV-Videostreams und biometrische Daten werden vor der Übertragung lokal auf dem Gerät via AES-256 verschlüsselt. Transport via TLS 1.3 und Speicherung in isolierten europäischen Clustern unter benutzergesteuerten Schlüsseln (CMEK).",
-                wp_point_2_title: "2. QR-Rettung mit Ephemeren Token", wp_point_2_text: "Der QR-Code des Armbands enthält eine zufällige UUID ohne personenbezogene Daten. Beim Scannen wird eine ephemere Sitzung generiert, die nur Identitätsvideo und Kontakt anzeigt.",
-                wp_point_3_title: "3. Strikte Einhaltung Vorschriften", wp_point_3_text: "Vorbereitet für BAA-Vereinbarungen (HIPAA) und native DSGVO-Konformität (inkl. automatisiertem Recht auf Vergessenwerden und KI-Modell-Isolierung).",
+                func_4_title: "SOS-Notfallmodus", func_4_desc: "Gleichzeitige Benachrichtigung mehrerer Kontakte mit einem Klick.",
+                func_5_title: "Wegverlauf-Historie", func_5_desc: "Einblick in vergangene Bewegungen für bessere medizinische Überwachung.",
+                func_6_title: "Abnahme-Erkennung", func_6_desc: "Sofortiger Alarm an den Pfleger, falls das Armband abgenommen wird.",
+                mockups_heading: "Visuelles Ökosystem", mockups_sub: "Benutzeroberflächen & Produktarchitektur", mockups_desc: "Visueller Rundgang durch die Schnittstellen für Pfleger und Angehörige.",
+                mockup_caption_1: "Abbildung 3: Mobile Pfleger-UI unter der Palette für null visuelle Ermüdung.",
+                wp_badge: "Technische Konformität & Sicherheit", wp_heading: "Datenschutz- & E2EE-Whitepaper", wp_desc: "Zero-Knowledge-Architektur nach HIPAA und DSGVO.",
+                wp_point_1_title: "1. Dreistufige Zero-Knowledge-Verschlüsselung", wp_point_1_text: "POV-Videostreams werden lokal via AES-256 verschlüsselt.",
+                wp_point_2_title: "2. QR-Rettung mit Ephemeren Token", wp_point_2_text: "QR-Code erzeugt eine ephemere Sitzung mit Identitätsvideo.",
+                wp_point_3_title: "3. Strikte Einhaltung Vorschriften", wp_point_3_text: "Vorbereitet für BAA-Vereinbarungen (HIPAA) und DSGVO.",
                 wp_download_btn: "Vollständiges Whitepaper Herunterladen (Markdown)",
-                mockups_heading: "Chronosense Visuelles Ökosystem", mockups_sub: "Benutzeroberflächen & Produktarchitektur",
-                mockups_desc: "Visueller Rundgang durch die Schnittstellen für Patienten, Familienüberwachung und Vermächtniserforschung.",
-                mockup_caption_1: "Abbildung 3: Mobile Pfleger-UI unter der Palette für null visuelle Ermüdung (Dark Mode & Emerald).",
-                partners_badge: "Strategische Partnerschaften", partners_heading: "Mit Chronosense verbinden",
-                partners_desc: "Sind Sie KI-Forscher, HealthTech-Produktleiter oder Investor? Wir öffnen Wege zur Validierung.",
+                partners_badge: "Strategische Partnerschaften", partners_heading: "Mit Chronosense verbinden", partners_desc: "Sind Sie KI-Forscher, HealthTech-Produktleiter oder Investor? Wir öffnen Wege zur Validierung.",
                 form_label_name: "Vollständiger Name oder Institution", form_label_email: "Berufliche E-Mail-Adresse", form_label_msg: "Nachricht oder Validierungsinteresse", form_submit: "Executive Brief Anfordern",
                 footer_copy: "© 2026 Chronosense Project. Alle Rechte vorbehalten. Vertrauliches Konzept."
             }
